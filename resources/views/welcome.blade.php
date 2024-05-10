@@ -656,7 +656,7 @@
                                 src="{{asset('storage/'.$item->link_image)}}">
                         </div>
                         <div class="ev_col_2">
-                            <p><a href="https://amitshah.co.in/events/hm-amit-shah-inaugurates-various-development-projects-of-amc-and-auda-in-ahmedabad">
+                            <p><a href="{{route('event_details',['id' => $item->id, 'title' => $item->title])}}">
                                 {{$item->title}}
                             </a></p>
                             <div class="evdtsl">
@@ -705,18 +705,5 @@
 
 
 
-    <!--CHATBOT ICON-->
-    <div class="chatbot_min"><a href="#" class="chatbot_col"><i class="fas fa-comment-alt"></i></a></div>
-    <!--CHATBOT ICON-->
-
-
-    <div class="fixed_btns">
-        <div class="btn_darmod"><input type="checkbox" id="switch"><label for="switch"><i class="fas fa-moon"></i>
-                <span>Toggle Dark Mode</span></label></div>
-
-        <!--font size-->
-        <div class="toggle-font-size"><a class="toggleFont">T<b>T</b><span>Toggle Large Font Size </span></a></div>
-        <!--font size-->
-    </div>
 
 @endsection

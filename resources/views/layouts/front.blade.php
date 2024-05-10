@@ -429,16 +429,6 @@
     </div>
     <!-- menu-wrapper end -->
 
-    <!--quick links -->
-    <div class="las_quicklinks">
-        <div class="las_quicklinks_min">
-            <div class="las_quicklinks_link">
-                <a href="https://amitshah.co.in/listen">Listen</a>
-                <a href="https://amitshah.co.in/act">Act</a>
-                <a href="https://amitshah.co.in/share">Share</a>
-            </div>
-        </div>
-    </div>
     <!-- menu-wrapper -->
 
     @yield('content')

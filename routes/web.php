@@ -19,6 +19,8 @@ Route::get('/about-us', [App\Http\Controllers\FrontendController::class, 'about_
 Route::get('/news/{id}/{title}', [App\Http\Controllers\FrontendController::class, 'news_details'])->name('news');
 Route::get('/image-gallery/{id}/{title}', [App\Http\Controllers\FrontendController::class, 'image_gallery_details'])->name('image_gallery_details');
 
+Route::get('/event-details/{id}/{title}', [App\Http\Controllers\FrontendController::class, 'event_details'])->name('event_details');
+
 
 Route::get('/news', [App\Http\Controllers\FrontendController::class, 'news_index'])->name('news_page');
 
