@@ -1,0 +1,76 @@
+body.font_larger *{transition: all 0.5s;}
+body.font_larger{font-size:19px}
+body.font_larger .menu-submenu a{ font-size:16px}
+body.font_larger .homeslider .item.slick-active h3{ font-size:60px}
+body.font_larger .homeslider .item .img-fill .info{ width:800px}
+body.font_larger .stories_slider_txt{font-size:19px}
+body.font_larger .popn_box_txt2 p{ font-size:14px}
+body.font_larger .popn_box_txt2 h4{ font-size:17px}
+body.font_larger .prhdp{font-size:19px}
+body.font_larger .ply_v_cov_hd h3{font-size:19px}
+body.font_larger .journey_txt p{font-size:18px}
+body.font_larger .bx_min_col_txt a{font-size:18px}
+body.font_larger .ev_col_2 p{font-size:19px}
+body.font_larger .ev_col_txt2_tx{font-size:19px}
+body.font_larger .heading09_topbanner{ font-size:75px}
+body.font_larger .para09_topbanner{ font-size:22px}
+body.font_larger .join_me_slider h2{ font-size:22px}
+body.font_larger .timeline_txt_hd{font-size:19px}
+body.font_larger .timeline_col{width: 32.7%;}
+body.font_larger .blog-h{ font-size:31px}
+body.font_larger .blog-dtl-tag a{ font-size:16px}
+body.font_larger .gallerysctgrd_col_txt_call a{ font-size:20px}
+body.font_larger .ctg_mark a{ font-size:16px}
+body.font_larger .bx_min_col_sos *{ font-size:14px}
+body.font_larger .gallerysctgrd_col{ width:31%}
+body.font_larger .inn_2 p{font-size:19px}
+body.font_larger .count_box_col2 li p{ font-size:17px}
+
+
+
+/*dark mode*/
+body.dark{ background:#000; color:#fff}
+body.dark .btn_darmod{ }
+body.dark .count_box ul li:hover{ background:#000}
+body.dark .popn_box2{ background:#000}
+body.dark .bg_col_g {background: #333;}
+body.dark .bg_col_f {background: #000;}
+body.dark .journey-nav .slick-current h1{ background:#fff; color:#000}
+body.dark .journey_col{background: #2b2b2b;}
+body.dark .jr_btn a{ color:#fff}
+body.dark .tab-content{ background:none}
+body.dark .ev_col_min{ background:#000}
+body.dark .bg_col_g2 {background: #808080;}
+body.dark .nav-top-links ul li a{ color:#000}
+body.dark .amitshah_slider_2 .amit_s_inf_c2 h2, body.dark .amitshah_slider_2 .amit_s_inf_c2 h3{ color:#fff!important}
+body.dark .blog-h{ color:#fff}
+body.dark .blog-dtl-sos-l a{ color:#fff}
+body.dark .blog-dtl-sos2 a{ color:#fff}
+body.dark .db_lk{ color:#fff}
+body.dark .bx_min_col {background: #393939;}
+body.dark .bx_min_col_txt{ color:#fff}
+body.dark .box_lut_sm *{ color:#fff}
+body.dark .box_lut_sm .ctg_mark a{color: #000;}
+body.dark .lifebeliefs_sld_txt{ background:#000}
+body.dark .briefhistory_txt p{ color:#fff}
+body.dark .ab_sect_bx-txt{ background:#000}
+body.dark .inn_1{ background:#000}
+body.dark .pagination_min .pagination li a{ background:#000}
+body.dark .contact_col_info a{ color:#fff}
+body.dark .menu-list09{ background:#000}
+body.dark .menu_hdg{color:#fff}
+body.dark .menu-submenu a{color:#fff}
+body.dark.hamburgermenu-active header{ background:#000}
+body.dark .stories_slider_txt p{color: #fff;}
+body.dark .ev_col_2 p a, body.dark .evdtsl_r a{color: #fff;}
+body.dark .bx_min_col_txt a{color: #fff;}
+body.dark .tab-pane09-data{background: #000;}
+/*dark mode*/
+
+
+
+@media only screen and (max-width:800px){
+    body.font_larger .homeslider .item.slick-active h3{ font-size:40px}
+
+
+}

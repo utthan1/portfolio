@@ -1,0 +1,378 @@
+$(document).ready(function() {
+
+    if(localStorage.getItem("dark_mode") == 1){
+        $('body').addClass('dark');
+    }
+    if(localStorage.getItem("large_font") == 1){
+        $('body').addClass('font_larger');
+    }
+
+    $('#newsletterForm').validate({
+        ignore: [],
+        rules: {
+            email : {required: true, email :true},
+        },
+        errorElement: 'span',
+        errorPlacement: function (error, element) {
+          error.addClass('invalid-feedback');
+          element.closest('.input-group').append(error);
+        },
+
+        highlight: function (element, errorClass, validClass) {
+          $(element).addClass('is-invalid');
+        },
+
+        unhighlight: function (element, errorClass, validClass) {
+          $(element).removeClass('is-invalid');
+        },
+
+        submitHandler: function(form) {
+            showLoader();
+                    
+            grecaptcha.ready(function() {
+            grecaptcha.execute(captcha_key, {action: 'submit'}).then(function(token) {
+
+              var object = getFormDataObject(form);
+              object.g_recaptcha_response = token;
+              var json = JSON.stringify(object);
+            
+              $.ajax({
+                type: $(form).attr('method'),
+                url: $(form).attr('action'),
+                data: json,
+                processData: false,
+                dataType: "json",
+                contentType: 'application/json',
+
+                complete: function (data) {
+                    hideLoader();
+                },
+                success: function( $res) {
+                    $('#newsletterForm')[0].reset();
+                    showSweetalert('You have successfully subscribed.',1);
+                },
+                error: function(xhr, textStatus, errorMessage) {
+                    handleErrorMessage(xhr, textStatus,2);
+                }             
+            });
+
+              }); //end grecaptcha execute 
+            }); //end grecaptcha 
+        }
+    }); //end fn
+    
+    $(document).on('click', '.bookmark_post', function(e){
+        e.preventDefault();
+        $id = $(this).data('id');
+        if($id == ''){
+            return false;
+        }
+
+        $url = site_url+'/api/v1/posts/'+$id+'/bookmark';
+    
+        $element = $(this);
+
+        if($element.find('i').hasClass('active')){
+            $method = 'delete';
+        }else{
+            $method = 'post';
+        }
+        showLoader();
+
+        $.ajax({
+            type: $method,
+            url: $url,
+            processData: false,
+            dataType: "json",
+            contentType: 'application/json',
+            complete: function (data) {
+                hideLoader();
+            },
+            success: function( $res) {
+                if($method == 'delete'){
+                    $element.find('i').removeClass('active');
+                    showToastr('Bookmark removed');
+                }else{
+                    $element.find('i').addClass('active');
+                    showToastr('Bookmark added');
+                }
+            },
+            error: function(xhr, textStatus, errorMessage) {
+                try {
+                    $res= $.parseJSON(xhr.responseText);
+
+                    if($res.message.toLocaleLowerCase().indexOf("unauthenticated")!=-1){
+                        showSweetalert('Please login to perform this action. <br><a href="'+site_url+'/login" class="err_pp_login">LOGIN</a>',0);
+                    }else{
+                        showToastr($res.message,0);
+                    }
+                    
+                } catch(e) {
+                    showToastr('Request could not be completed',0);
+                }
+            }             
+        });
+
+    }); //end 
+
+
+     $(document).on('click', '.submit_poll', function(e){
+
+        $form = $(this).parents('form');
+        $poll = $form.data('id');
+        $option = $('input[name=option]:checked', $form ).val();
+
+        if($poll == ''){
+            return false;
+        }if($option == ''){
+            return false;
+        }
+        $url = site_url+'/api/v1/polls/'+$poll+'/vote/'+$option;
+
+        showLoader();
+        $.ajax({
+            type: 'post',
+            url: $url,
+            processData: false,
+            dataType: "json",
+            contentType: 'application/json',
+            complete: function (data) {
+                hideLoader();
+            },
+            success: function( $res) {
+                $('.radio_in_box',$form).html('<p class="vote_success">Voted successfully</p>')
+            },
+            error: function(xhr, textStatus, errorMessage) {
+                try {
+                    $res= $.parseJSON(xhr.responseText);
+                    showToastr($res.message,0);
+                } catch(e) {
+                    showToastr('Request could not be completed',0);
+                }
+            }             
+        });
+
+    }); //end 
+
+    var popupCenter = function(url, title, w, h) {
+        // Fixes dual-screen position                         Most browsers      Firefox
+        var dualScreenLeft = window.screenLeft !== undefined ? window.screenLeft : screen.left;
+        var dualScreenTop = window.screenTop !== undefined ? window.screenTop : screen.top;
+
+        var width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+        var height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+        var left = ((width / 2) - (w / 2)) + dualScreenLeft;
+        var top = ((height / 3) - (h / 3)) + dualScreenTop;
+
+        var newWindow = window.open(url, title, 'scrollbars=yes, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
+
+        // Puts focus on the newWindow
+        if (newWindow && newWindow.focus) {
+            newWindow.focus();
+        }
+    };
+    
+     function shareCall($element){
+
+        $id = $element.data('id');
+        $type = $element.data('type');
+        $post_url = $element.data('url');
+
+        $apiurl = '';
+        $json = {};
+        if($type == 'post'){
+            $apiurl = site_url+'/api/v1/posts/'+$id+'/share';
+        }
+        else if($type == 'event'){
+            $apiurl = site_url+'/api/v1/events/'+$id+'/share';
+        }
+        else if($type == 'image'){
+            $cat = $element.data('category');
+
+            // var params = {'category':$cat, 'media':$id};
+            // $apiurl = site_url+'/api/v1/share/?'+ $.param(params);
+            $apiurl = site_url+'/api/v1/share';
+
+            $json.category = $cat;
+            $json.media = $id;
+        }
+
+        // console.log($json);
+
+        if($apiurl == ''){
+            return false;
+        }   
+
+        $.ajax({
+            type: 'post',
+            url: $apiurl,
+            data: JSON.stringify($json),
+            processData: false,
+            dataType: "json",
+            contentType: 'application/json',
+            complete: function (data) {
+                // hideLoader();
+            },
+            success: function( $res) {
+
+            },
+            error: function(xhr, textStatus, errorMessage) {
+                /*try {
+                    $res= $.parseJSON(xhr.responseText);
+                    showToastr($res.message,0);
+                } catch(e) {
+                    showToastr('Request could not be completed',0);
+                }*/
+            }             
+        });
+     }
+
+     function copyToClipboard($element) {
+          var aux = document.createElement("input");
+          aux.setAttribute("value", $element.val());
+          document.body.appendChild(aux);
+          aux.select();
+
+          document.execCommand("copy");
+          document.body.removeChild(aux);
+          showToastr('Link copied successfully.');
+    }
+
+    $(document).on('click', '.srpost_t a', {}, function popUp(e) {
+        var self = $(this);
+        popupCenter(self.attr('href'), self.data('text'), 580, 470);
+        e.preventDefault();
+
+        shareCall($(this).parents('.srpost_row'));
+    });
+
+
+    $(document).on('click','.srpost_copy_fld_b',function(){
+        $element = $(this).parents('.srpost_copy').find('input').val();
+
+        copyToClipboard($(this).parents('.srpost_copy').find('input'));
+        shareCall($(this).parents('.srpost_row'));
+    });
+
+    $(document).on('click','.openShareBox',function(e){
+        e.preventDefault();
+
+        $id = $(this).data('id');
+        $type = $(this).data('type');
+        $url = $(this).data('url');
+        $category = $(this).data('category');
+
+        $whatsapp_url = 'https://wa.me/?text='+$url;
+        $fb_url = 'https://www.facebook.com/sharer/sharer.php?u='+$url;
+        $twitter_url = 'https://twitter.com/intent/tweet?text='+$url;
+        $linkedin_url = 'https://www.linkedin.com/sharing/share-offsite/?url='+$url;
+
+        $('#sharepopup .whatsapp_s').attr('href',$whatsapp_url);
+        $('#sharepopup .facebook_s').attr('href',$fb_url);
+        $('#sharepopup .twitter_s').attr('href',$twitter_url);
+        $('#sharepopup .linkedin_s').attr('href',$linkedin_url);
+        $('#sharepopup #myInput').val($url);
+        $('#sharepopup .srpost_row').data('id',$id);
+        $('#sharepopup .srpost_row').data('type',$type);
+        $('#sharepopup .srpost_row').data('url',$url);
+        $('#sharepopup .srpost_row').data('category',$category);
+
+        $.fancybox.open({
+            src: '#sharepopup', 
+        });
+    });
+
+
+    $(document).on('click','.toggleFont',function(e){
+        e.preventDefault();
+        $('body').toggleClass('font_larger');
+
+        if($('body').hasClass('font_larger')){
+            localStorage.setItem("large_font", 1);
+        }else{
+            localStorage.setItem("large_font", 0);
+        }
+        
+    });
+
+    $(document).on('click','.btn_darmod',function(e){
+        e.preventDefault();
+        $('body').toggleClass('dark');
+
+        if($('body').hasClass('dark')){
+            localStorage.setItem("dark_mode", 1);
+        }else{
+            localStorage.setItem("dark_mode", 0);
+        }
+    });
+
+    $("#filterhide").click(function(){
+      $(".filter_box1").hide();
+      $("#filtershow").show();
+    });
+    $("#filtershow").click(function(){
+      $(".filter_box1").show();
+      $("#filtershow").hide();
+    });
+
+});
+
+$(document).ready(function(e) {
+
+
+    $('.search-wrapper input').keyup(function(e) {
+        if(e.which == 13) {
+            $term = $.trim($('.search-wrapper input').val());
+            if($term.length > 0){
+                window.location.href = site_url+"/searchresult?q="+$term;
+                return false;
+            }
+        }
+    });
+
+    $('.searchSubmit').click(function(e) {
+        $term = $.trim($('.search-wrapper input').val());
+        if($term.length > 0){
+            window.location.href = site_url+"/searchresult?q="+$term;
+            return false;
+        }
+    });
+
+    /*var timeout;
+    var delay = 500;
+
+    $('.search-wrapper input').keyup(function(e) {
+        if(timeout) {
+            clearTimeout(timeout);
+        }
+        timeout = setTimeout(function() {
+            searchFunction();
+        }, delay);
+    });
+
+
+    function searchFunction() {
+        $term = $.trim($('.search-wrapper input').val());
+
+        if($term.length > 2){
+            $('.search-spin-icon').show();
+
+            $.ajax({
+                url:site_url+"/api/v1/search_list?q="+$term+"&lang="+$('#current_locale').val(),
+                complete: function (data) {
+                    //hideLoader();
+                },
+                success:function(data)
+                {   
+                    $('.search-result').html(data);
+                    // $('.search-result').show();
+                    $('.search-result').addClass('active');
+                    $('.search-spin-icon').hide();
+                }
+            });
+        }else{
+            $('.search-result').removeClass('active');
+        }
+    }*/
+});
