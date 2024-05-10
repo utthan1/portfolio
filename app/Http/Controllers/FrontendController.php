@@ -47,4 +47,9 @@ class FrontendController extends Controller
         $image_gallery = ImageGallery::find($id);
         return view('frontend.image_gallerydetails', ['image_gallery' => $image_gallery]);
     }
+
+    public function event_details($id , $title){
+        $event = Event::find($id);
+        return view('frontend.event_details',['event' => $event]);
+    }
 }

@@ -2991,6 +2991,10 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 .cth_r {
     float: right
 }
+.content_box_left_change {
+    float: left;
+    width: 70%;
+}
 
 .content_box_left {
     float: left;
