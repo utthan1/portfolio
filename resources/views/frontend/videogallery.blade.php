@@ -31,9 +31,9 @@
 
             <div id="tag_wrapper">
                 <div class="owl-carousel pr category_flt_sldier d-flex justify-content-center">
-                    <div class="item"><a class="ctrbl_f  active ">Image</a></div>
+                    <div class="item"><a class="ctrbl_f " href="{{route('gallery')}}">Image</a></div>
 
-                    <div class="item"><a class="ctrbl_f " href="{{route('video_gallery')}}">Video</a></div>
+                    <div class="item"><a class="ctrbl_f  active" href="{{route('video_gallery')}}">Video</a></div>
                 </div>
             </div>
 
@@ -43,26 +43,27 @@
 
 
 
-
+    {{-- video_gallery_detail --}}
     <section class="sp_sm ">
         <div class="container">
 
             <div id="data_list">
                 <div class="gallerysctgrd">
-                 
-                    @foreach ($gallery as $item)
+                    @foreach ($video_gallery as $item)
                     <div class="gallerysctgrd_col pr oh">
-                        <a href="{{ route('image_gallery_details', ['id' => $item->id, 'title' => $item->title]) }}">
+                        <a
+                            href="{{ route('video_gallery_detail', ['id' => $item->id, 'title' => $item->title]) }}">
                             <div class="gallerysctgrd_col_bg"> <img
-                                    src="{{asset('storage/'. $item->images[0]->image_path)}}">
+                                    src="{{asset('storage/'.$item->image)}}">
                             </div>
                         </a>
 
-                        <div class="bk_mark"><a class="mark_lk bookmark_post" href="#" data-id="54843"><i
+                        <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg"></div>
+                        <div class="bk_mark"><a class="mark_lk bookmark_post" href="#" data-id="54844"><i
                                     class="fas fa-bookmark "></i></a></div>
                         <div class="gallerysctgrd_col_txt">
-                            <a href="{{ route('image_gallery_details', ['id' => $item->id, 'title' => $item->title]) }}"
-                                class="gallerysctgrd_col_txt_call">
+                            <a href="{{ route('video_gallery_detail', ['id' => $item->id, 'title' => $item->title]) }}"
+                                class="gallerysctgrd_col_txt_call">4
                                 <p> {{$item->title}} </p>
                             </a>
 
