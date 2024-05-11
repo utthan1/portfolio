@@ -73,7 +73,34 @@
         </div>
         <div class="clearfix"></div>
     </section>
-
+    <section class="hero_about">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-6 p-4">
+                    <img src="{{asset('assets/front/images/about.jpg')}}" class="img-fluid rounded" alt="about image" >
+                </div>
+                <div class="col-6 hv-100 p-4">
+                    <div class="">
+                        <div class="header_title mb-2">
+                            <h3 class="timalhdg">ABOUT</h3>
+                        </div>
+                        <div class="header_title_name my-2">
+                            <h3 >Swatantra Dev Singh</h3>
+                        </div>
+                        <hr style="width: 45px;border: 2.8px solid var(--org_color);opacity: 1; ">
+                        <div class="paragraph">
+                            <p>
+                                Raksha Mantri Shri Rajnath Singh is one of the senior-most political leaders of the country. He started his political career as a student activist with Akhil Bharatiya Vidyarthi Parishad (ABVP) and went on to become the Bharatiya Janata Party (BJP) National President.
+                            </p>
+                        </div>
+                        <button class="btn bg_col_o f_col_l mt-5 py-2 px-4">
+                            View Bio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="sp_sm bg_col_l">
@@ -155,34 +182,7 @@
     </section>
 
 
-    <section class="hero_about">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-6 p-4">
-                    <img src="{{asset('assets/front/images/about.jpg')}}" class="img-fluid rounded" alt="about image" >
-                </div>
-                <div class="col-6 hv-100 p-4">
-                    <div class="">
-                        <div class="header_title mb-2">
-                            <h3 class="timalhdg">ABOUT</h3>
-                        </div>
-                        <div class="header_title_name my-2">
-                            <h3 >Swatantra Dev Singh</h3>
-                        </div>
-                        <hr style="width: 45px;border: 2.8px solid var(--org_color);opacity: 1; ">
-                        <div class="paragraph">
-                            <p>
-                                Raksha Mantri Shri Rajnath Singh is one of the senior-most political leaders of the country. He started his political career as a student activist with Akhil Bharatiya Vidyarthi Parishad (ABVP) and went on to become the Bharatiya Janata Party (BJP) National President.
-                            </p>
-                        </div>
-                        <button class="btn bg_col_o f_col_l mt-5 py-2 px-4">
-                            View Bio
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 
 
