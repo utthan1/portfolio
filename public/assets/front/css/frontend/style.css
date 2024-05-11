@@ -207,11 +207,14 @@ body::-webkit-scrollbar-thumb {
     --light_font: 'gthm_light';
 
     /*color*/
+    /* --org_color: rgb(241 115 28);
+    --org2_color: #F2B591; */
     --min_color: #262626;
-    --org_color: rgb(241 115 28);
+    --org_color: #4056A1;
     --org2_color: #F2B591;
     --ligth_color: #fff;
-    --gry_color: #f0f1f1;
+    /* --gry_color: #f0f1f1; */
+    --gry_color: #f8f4e2;
     --gry2_color: #f9f9f9;
     --dark_color: #0d0d0d;
     --dark_color2: #121212;
@@ -564,6 +567,10 @@ select.form-control {
 /*CHATBOT END*/
 
 /*PAGE INFO*/
+#gallery .pageinfo {
+    height: auto;
+}
+
 .pageinfo {
     position: relative;
     padding: 41px 0 0px;
@@ -6271,7 +6278,7 @@ a.slide_fltr_btn2 {
 }
 
 .category_flt_sldier .ctrbl_f {
-    border-radius: 0 20px 20px 20px;
+    /* border-radius: 0 20px 20px 20px; */
     padding: 7px 25px;
     display: block;
     background: #fff;

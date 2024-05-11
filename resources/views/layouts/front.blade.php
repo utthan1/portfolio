@@ -93,9 +93,6 @@
                         <li class="menu-item menu-item-4 ">
                             <a href="{{route('news_page')}}">News</a>
                         </li>
-                        <li class="menu-item menu-item-5 ">
-                            <a href="https://amitshah.co.in/myview">My View</a>
-                        </li>
                         <li class="menu-item menu-item-6 ">
                             <a href="{{ route('contact') }}">Contact Us</a>
                         </li>
@@ -482,26 +479,6 @@
 
     </footer>
 
-
-    <div class="mobile_footer">
-        <div class="m_footer_inner">
-            <ul>
-                <li class="icon_link1"><a href="https://amitshah.co.in/press" class="active"><span></span>
-                        <p>Press</p>
-                    </a></li>
-                <li class="icon_link2"><a href="https://amitshah.co.in/listen" class="active"><span></span>
-                        <p>Listen</p>
-                    </a></li>
-                <li class="icon_link3"><a href="https://amitshah.co.in/act" class="active"><span></span>
-                        <p>Act</p>
-                    </a></li>
-                <li class="icon_link4"><a href="https://amitshah.co.in/share" class="active"><span></span>
-                        <p>Share</p>
-                    </a></li>
-
-            </ul>
-        </div>
-    </div>
 
 
 

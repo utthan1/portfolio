@@ -24,9 +24,11 @@ Route::get('/event-details/{id}/{title}', [App\Http\Controllers\FrontendControll
 
 Route::get('/news', [App\Http\Controllers\FrontendController::class, 'news_index'])->name('news_page');
 
-Route::get('/gallery', function () {
-    return view('frontend.gallery');
-})->name('gallery');
+Route::get('/gallery', [App\Http\Controllers\FrontendController::class, 'gallery_index'])->name('gallery');
+Route::get('/video-gallery', [App\Http\Controllers\FrontendController::class, 'video_gallery_index'])->name('video_gallery');
+Route::get('/video-gallery-details/{id}/{title}', [App\Http\Controllers\FrontendController::class, 'video_gallery_detail'])->name('video_gallery_detail');
+
+
 
 Route::get('/contact-us', function () {
     return view('frontend.contact');

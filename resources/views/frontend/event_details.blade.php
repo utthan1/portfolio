@@ -27,8 +27,8 @@
 
 
                     <div class="blog-bg pr">
-                        <a data-fancybox="video_slider" href="{{$event->link}}"><img
-                                src="{{asset('storage/'.$event->link_image)}}">
+                        <a data-fancybox="video_slider" href="{{$event->link}}">
+                            <img src="{{asset('storage/'.$event->link_image)}}">
                             <div class="bg_ovrl_btn"><img src="{{asset('assets/front/images/icon/video.svg')}}"></div>
                         </a>
                     </div>
@@ -42,8 +42,7 @@
                                     <div class="">
                                         <a data-fancybox="gallery_images"
                                             href="{{asset('storage/'.$item->path)}}">
-                                            <img
-                                                src="{{asset('storage/'.$item->path)}}">
+                                            <img src="{{asset('storage/'.$item->path)}}">
                                         </a>
                                     </div>
                                 @endforeach
