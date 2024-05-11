@@ -1,6 +1,6 @@
 /*___________WEB FONTS_____________*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); */
+/* 
 @font-face {
     font-family: 'gthm_medium';
     src: url('fonts/gthm_medium.eot');
@@ -39,10 +39,17 @@
     src: local('☺'), url('fonts/gthm_black.woff') format('woff'), url('fonts/gthm_black.ttf') format('truetype'), url('fonts/gthm_black.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 /*___________WEB FONTS END_____________*/
 
+
+@font-face {
+    font-family:  "gthm_bold";
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+    font-weight: bold;
+    font-style: normal
+}
 
 /* old color code #ff6e5f | new color code #ff7e54*/
 
@@ -198,9 +205,12 @@ body::-webkit-scrollbar-thumb {
 /*___________COMMON STYLE_____________*/
 :root {
     /*font*/
+    /* --headings_font: 'gthm_bold';
+    --headings2_font: 'gthm_medium'; */
+    /* --headings3_font: 'Roboto Slab', serif; */
     --headings_font: 'gthm_bold';
-    --headings2_font: 'gthm_medium';
-    --headings3_font: 'Roboto Slab', serif;
+    --headings2_font: "Montserrat Medium", Sans-serif;
+    --headings3_font: "Montserrat", Sans-serif;
     --common_font: 'gthm_book';
     --bold_font: 'gthm_bold';
     --bold2_font: 'gthm_black';
