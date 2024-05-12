@@ -1,6 +1,6 @@
 /*___________WEB FONTS_____________*/
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap'); */
-/* 
+
 @font-face {
     font-family: 'gthm_medium';
     src: url('fonts/gthm_medium.eot');
@@ -9,7 +9,7 @@
     font-style: normal
 }
 
-@font-face {
+/* @font-face {
     font-family: 'gthm_book';
     src: url('fonts/gthm_book.eot');
     src: local('☺'), url('fonts/gthm_book.woff') format('woff'), url('fonts/gthm_book.ttf') format('truetype'), url('fonts/gthm_book.svg') format('svg');
@@ -23,7 +23,7 @@
     src: local('☺'), url('fonts/gthm_light.woff') format('woff'), url('fonts/gthm_light.ttf') format('truetype'), url('fonts/gthm_light.svg') format('svg');
     font-weight: normal;
     font-style: normal
-}
+} */
 
 @font-face {
     font-family: 'gthm_bold';
@@ -33,7 +33,7 @@
     font-style: normal
 }
 
-@font-face {
+/* @font-face {
     font-family: 'gthm_black';
     src: url('fonts/gthm_black.eot');
     src: local('☺'), url('fonts/gthm_black.woff') format('woff'), url('fonts/gthm_black.ttf') format('truetype'), url('fonts/gthm_black.svg') format('svg');
@@ -44,12 +44,6 @@
 /*___________WEB FONTS END_____________*/
 
 
-@font-face {
-    font-family:  "gthm_bold";
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
-    font-weight: bold;
-    font-style: normal
-}
 
 /* old color code #ff6e5f | new color code #ff7e54*/
 
@@ -205,11 +199,11 @@ body::-webkit-scrollbar-thumb {
 /*___________COMMON STYLE_____________*/
 :root {
     /*font*/
-    /* --headings_font: 'gthm_bold';
-    --headings2_font: 'gthm_medium'; */
-    /* --headings3_font: 'Roboto Slab', serif; */
     --headings_font: 'gthm_bold';
-    --headings2_font: "Montserrat Medium", Sans-serif;
+    --headings2_font: 'gthm_medium';
+    /* --headings3_font: 'Roboto Slab', serif; */
+    /* --headings_font: 'gthm_bold';
+    --headings2_font: "Montserrat Medium", Sans-serif; */
     --headings3_font: "Montserrat", Sans-serif;
     --common_font: 'gthm_book';
     --bold_font: 'gthm_bold';
@@ -219,15 +213,35 @@ body::-webkit-scrollbar-thumb {
     /*color*/
     /* --org_color: rgb(241 115 28);
     --org2_color: #F2B591; */
-    --min_color: #262626;
+
+
+    /* Artsy and Creative color */
+    /* --min_color: #262626;
     --org_color: #4056A1;
     --org2_color: #F2B591;
+    --ligth_color: #fff; */
+    /* --gry_color: #f0f1f1; */
+    /* --gry_color: #f8f4e2;
+    --gry2_color: #f9f9f9;
+    --dark_color: #0d0d0d;
+    --dark_color2: #121212; */
+
+
+
+
+
+    /* Vibrant but Calm color */
+     --min_color: #262626;
+    --org_color: #4ABDAC;
+    --org2_color: #F7B733;
     --ligth_color: #fff;
+    --orange_color: #FC4A1A;
     /* --gry_color: #f0f1f1; */
     --gry_color: #f8f4e2;
     --gry2_color: #f9f9f9;
     --dark_color: #0d0d0d;
     --dark_color2: #121212;
+
 }
 
 .bg_col_b {
@@ -2614,7 +2628,7 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 
 .owl-carousel .owl-item img {
     display: block;
-    width: 100%;
+    width: 80%;
 }
 
 .owl-carousel .owl-dots.disabled,
@@ -3854,7 +3868,8 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
     display: flex;
     background: #fff;
     padding: 5px;
-    border-radius: 100px 0 20px 100px;
+    /* border-radius: 100px 0 20px 100px; */
+    border-radius: 20px;
     overflow: hidden;
     margin: 20px 1%;
     float: none;
@@ -3889,7 +3904,7 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 .popn_box_txt2 {
     width: 70%;
     padding: 10px 15px;
-    text-align: right;
+    text-align: left;
 }
 
 .popn_box_txt2 p {
@@ -4129,7 +4144,7 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 .amit_s_inf_c2 h2 {
     font-size: 34px;
     line-height: 44px;
-    color: #ff7e54
+    color: var(--min_color)
 }
 
 .amit_s_inf_c2 h3 {
@@ -4137,7 +4152,7 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
     padding: 10px 0;
     font-size: 20px;
     line-height: 30px;
-    color: #ff7e54
+    color: var(--min_color)
 }
 
 .amitshah_slider {}
@@ -4150,15 +4165,15 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 }
 
 .amitshah_slider .owl-dots button.active {
-    background: #ff8b7f;
+    background: var(--org_color);
 }
 
 .amitshah_slider .owl-dots button {
-    background: #ffb6af;
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    margin: 5px;
+    background : var(--gry_color);
+    width : 12px;
+    height : 12px;
+    border-radius : 100%;
+    margin : 5px;
 }
 
 
@@ -4166,7 +4181,7 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
 .ev_col_left {
     float: left;
     width: 50%;
-    padding: 0 7px
+    padding: 0 7px;
 }
 
 .ev_col_min {
