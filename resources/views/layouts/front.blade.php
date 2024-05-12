@@ -96,32 +96,9 @@
                         <li class="menu-item menu-item-6 ">
                             <a href="{{ route('contact') }}">Contact Us</a>
                         </li>
-                        <li class="language dropdown">
-                            <a id="dropdown_language" data-bs-toggle="dropdown" href="#">
-                                <span class="selected_lang text-uppercase ">EN</span> <i class="fas fa-sort-down"></i></a>
-                            <div class="dropdown-menu lang_switcher" aria-labelledby="dropdown_language">
-                                <a href="#" class="translate_control selected" data-lang="en">English</a> <a
-                                    href="#" class="translate_control " data-lang="hi">Hindi</a>
-                            </div>
-                        </li>
                     </ul>
                 </div>
 
-                <div class="search-wrapper">
-                    <div class="input-holder">
-                        <input type="text" class="search-input" placeholder="Type to search " value="" />
-                        <!-- <span class="search-spin-icon" style="display: none;"><i class="fas fa-spinner fa-spin"></i></span> -->
-
-                        <button class="search-icon" onClick="searchToggle(this, event);"><span><img
-                                    src="https://amitshah.co.in/images/icon/search.png" /></span></button>
-                    </div>
-                    <span class="searchSubmit"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
-                    <span class="close" onClick="searchToggle(this, event);"></span>
-                </div>
-
-                <div class="search-result">
-
-                </div>
             </div>
 
 
