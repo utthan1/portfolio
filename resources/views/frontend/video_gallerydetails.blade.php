@@ -10,8 +10,8 @@
             <!--NAV BAR-->
             <div class="top_nav_bar">
                 <ul>
-                    <li><a href="https://amitshah.co.in">Home</a></li>
-                    <li class=""><a href="https://amitshah.co.in/gallery">Video Gallery</a></li>
+                    <li><a href="{{url('/')}}">Home</a></li>
+                    <li class=""><a href="{{route('gallery')}}">Video Gallery</a></li>
                     <li class="active"><a href="#">{{$video_gallery->title}}</a></li>
                 </ul>
             </div>

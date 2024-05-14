@@ -5,9 +5,11 @@
         <section class="pageinfo">
 
             <div class="pageinfo_bg">
-                <div class="img_view_d"><img src="https://www.amitshah.co.in/storage/uploads/1/1672817934-63b52d0e2f366.jpg">
+                <div class="img_view_d">
+                    <img src="{{asset('assets/front/storage/w-gallery.jpg')}}" />
                 </div>
-                <div class="img_view_m"><img src="https://www.amitshah.co.in/storage/uploads/1/1672818316-63b52e8c1160c.jpg">
+                <div class="img_view_m">
+                    <img src="{{asset('assets/front/storage/m-gallery.jpg')}}">
                 </div>
             </div>
 
@@ -31,9 +33,9 @@
 
             <div id="tag_wrapper">
                 <div class="owl-carousel pr category_flt_sldier d-flex justify-content-center">
-                    <div class="item"><a class="ctrbl_f " href="{{route('gallery')}}">Image</a></div>
+                    <div class="item"><a class="ctrbl_f rounded" href="{{route('gallery')}}">Image</a></div>
 
-                    <div class="item"><a class="ctrbl_f  active" href="{{route('video_gallery')}}">Video</a></div>
+                    <div class="item"><a class="ctrbl_f  active rounded" href="{{route('video_gallery')}}">Video</a></div>
                 </div>
             </div>
 
@@ -58,7 +60,7 @@
                             </div>
                         </a>
 
-                        <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg"></div>
+                        <div class="bg_ovrl_btn"><img src="{{asset('assets/front/images/icon/video.svg')}}"></div>
                         <div class="bk_mark"><a class="mark_lk bookmark_post" href="#" data-id="54844"><i
                                     class="fas fa-bookmark "></i></a></div>
                         <div class="gallerysctgrd_col_txt">

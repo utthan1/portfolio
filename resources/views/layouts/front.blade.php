@@ -15,8 +15,8 @@
     <meta name="description" content="{{ $layout->meta_description }}">
 
 
-    <link rel="shortcut icon" href="https://www.amitshah.co.in/storage/uploads/1/1657030828-62c448ac0b44e.png"
-        type="image/x-icon">
+    {{-- <link rel="shortcut icon" href="https://www.amitshah.co.in/storage/uploads/1/1657030828-62c448ac0b44e.png"
+        type="image/x-icon"> --}}
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
 
@@ -120,240 +120,23 @@
 
                     <div class="menulist_row menulist_row_right menulist_row_sz1">
                         <div class="menulist_ex">
-                            <h3 class="minhdg"><a class="menu_hdg" href="https://amitshah.co.in">Home</a></h3>
-                            <h3 class="minhdg"><a class="menu_hdg" href="https://amitshah.co.in/about">About</a></h3>
+                            <h3 class="minhdg"><a class="menu_hdg" href="{{url('/')}}">Home</a></h3>
+                            <h3 class="minhdg"><a class="menu_hdg" href="{{route('about')}}">About</a></h3>
+                            <h3 class="minhdg"><a class="menu_hdg" href="{{route('news_page')}}">News</a></h3>
                             <h3 class="minhdg"><a class="menu_hdg"
-                                    href="https://amitshah.co.in/stalwart-says">Stalwart
-                                    Says</a></h3>
-                            <h3 class="minhdg"><a class="menu_hdg" href="https://amitshah.co.in/press">Press</a></h3>
-                            <h3 class="minhdg"><a class="menu_hdg" href="https://amitshah.co.in/myview">My Views</a>
+                                    href="{{route('gallery')}}">Gallery</a>
                             </h3>
-                            <h3 class="minhdg"><a class="menu_hdg"
-                                    href="https://amitshah.co.in/gallery?cat=All&amp;state=&amp;content=&amp;start_date=&amp;end_date=">Gallery</a>
-                            </h3>
-                            <h3 class="minhdg"><a class="menu_hdg"
-                                    href="https://amitshah.co.in/timeline">Timeline</a>
-                            </h3>
-                            <h3 class="minhdg"><a class="menu_hdg" href="https://amitshah.co.in/contact">Contact
+                            <h3 class="minhdg"><a class="menu_hdg" href="{{route('contact')}}">Contact
                                     Us</a>
                             </h3>
                         </div>
                     </div>
 
-
-                    <!--row-->
-                    <div class="menulist_row menulist_row_left  menulist_row_sz2">
-
-
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg">
-                                <span class="icon-plus"></span><a href="#" class="menu_hdg">Press</a>
-                            </h3>
-                            <ul class="menu-submenu accordion-content menu">
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/press?cat=&amp;content=&amp;state=&amp;posted_by=mb&amp;subcategory=6">News</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/press?cat=&amp;content=&amp;state=&amp;posted_by=mb&amp;subcategory=7">Interviews</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/press?cat=&amp;content=&amp;state=&amp;posted_by=mb&amp;subcategory=8">Editorials</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/press?cat=&amp;amp;content=&amp;amp;state=&amp;amp;posted_by=mb&amp;amp;subcategory=9">Critic</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/press?cat=&amp;amp;content=&amp;amp;state=&amp;amp;posted_by=mb&amp;amp;subcategory=10">Press
-                                        Releases</a></li>
-
-                            </ul>
-
-                        </div>
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg">
-                                <span class="icon-plus"></span><a href="#" class="menu_hdg">My views</a>
-                            </h3>
-                            <ul class="menu-submenu accordion-content menu">
-
-                                <li class=""> <a href="https://amitshah.co.in/myview?subcategory=3">Quotes</a>
-                                </li>
-
-
-                                <li class=""> <a href="https://amitshah.co.in/myview?subcategory=4">Blogs</a>
-                                </li>
-
-
-                                <li class=""> <a href="https://amitshah.co.in/myview?subcategory=5">Articles</a>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg">
-                                <span class="icon-plus"></span><a href="#" class="menu_hdg">Gallery</a>
-                            </h3>
-                            <ul class="menu-submenu accordion-content menu">
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/gallery?cat=Timeline&amp;amp;state=&amp;amp;content=&amp;amp;start_date=&amp;amp;end_date=">Timeline</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/gallery?cat=The+Lighter+Side&amp;amp;state=&amp;amp;content=&amp;amp;start_date=&amp;amp;end_date=">The
-                                        Lighter Side</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/gallery?cat=Election+Rally&amp;amp;state=&amp;amp;content=&amp;amp;start_date=&amp;amp;end_date=">Election
-                                        Rally</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/allery?cat=Government+Events&amp;amp;state=&amp;amp;content=&amp;amp;start_date=&amp;amp;end_date=">Government
-                                        Events</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/gallery?cat=Spiritual+Side&amp;amp;state=&amp;amp;content=image&amp;amp;start_date=&amp;amp;end_date=">Spiritual
-                                        Side</a></li>
-
-                            </ul>
-
-                        </div>
-
-
-
-                    </div>
-                    <!--row end-->
                     <div class="clearfix"></div>
                 </div>
 
 
                 <div class="menu_nav-list-min">
-                    <!--row-->
-                    <div class="menulist_row menulist_row_left  menulist_row_sz2">
-
-
-
-
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg">
-                                <span class="icon-plus"></span><a href="#" class="menu_hdg">Explore</a>
-                            </h3>
-                            <ul class="menu-submenu accordion-content menu">
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/gallery?cat=All&amp;state=&amp;content=video&amp;start_date=&amp;end_date=">Video</a>
-                                </li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/share?cat=blog&amp;content=&amp;state=&amp;posted_by=mb">Blogs</a>
-                                </li>
-
-
-                                <li class=""> <a href="https://amitshah.co.in/gallery">Gallery</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/milestone-as-bjp-president-and-ashyakshiye-pravas">Milestone
-                                        as BJP President and Adhyakshiye Pravas</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/9-years-achievements-of-ministry-of-home-affairs">9
-                                        Years Achievements of Ministry of Home Affairs</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://www.amitshah.co.in/ministry-of-cooperation-achievements">Achievements
-                                        of Ministry of Cooperation</a></li>
-
-                            </ul>
-
-                        </div>
-
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg">
-                                <span class="icon-plus"></span><a href="#" class="menu_hdg">Events</a>
-                            </h3>
-                            <ul class="menu-submenu accordion-content menu">
-
-                                <li class=""> <a href="https://amitshah.co.in/events?range=all">Latest</a></li>
-
-
-                                <li class=""> <a
-                                        href="https://amitshah.co.in/events?range=upcoming">Upcoming</a></li>
-
-
-                                <li class=""> <a href="https://amitshah.co.in/events?range=past">Past</a></li>
-
-                            </ul>
-
-                        </div>
-
-
-                        <div class="menu_list_col">
-                            <h3 class="toggle accordion-toggle minhdg"><span class="icon-plus"></span><a
-                                    class="menu_hdg">Latest Press</a></h3>
-
-                            <div class="accordion-content">
-                                <div class="popn_boxn"><a
-                                        href="https://amitshah.co.in/post/press/Raveena-Tandon-thanks-Home-Minister-Amit-Shah-for-the-Ramayana-gift-2024">
-                                        <div class="popn_boxn_bg"><img
-                                                src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1712414580-66115f747d486.png">
-                                        </div>
-                                        <div class="popn_boxn_txt">
-                                            <p>Raveena Tandon thanks Home Minister Amit...</p>
-
-
-                                            <span class="dat_popn_boxn">Apr 04, 2024</span>
-
-                                        </div>
-                                    </a></div>
-                                <div class="popn_boxn"><a
-                                        href="https://amitshah.co.in/post/press/Centre-To-Consider-Revoking-AFSPA-Plans-To-Pull-Back-Troops-From-JK-In-Place-Amit-Shah-2024">
-                                        <div class="popn_boxn_bg"><img
-                                                src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1711721450-6606cbeaec843.png">
-                                        </div>
-                                        <div class="popn_boxn_txt">
-                                            <p>Centre To Consider Revoking AFSPA, Plans...</p>
-
-
-                                            <span class="dat_popn_boxn">Mar 26, 2024</span>
-
-                                        </div>
-                                    </a></div>
-                                <div class="popn_boxn"><a
-                                        href="https://amitshah.co.in/post/press/PoK-an-integral-part-of-India-every-Indians-goal-to-get-it-back-Amit-Shah-2024">
-                                        <div class="popn_boxn_bg"><img
-                                                src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1711721390-6606cbae187e0.png">
-                                        </div>
-                                        <div class="popn_boxn_txt">
-                                            <p>‘PoK an integral part of India, every In...</p>
-
-
-                                            <span class="dat_popn_boxn">Mar 26, 2024</span>
-
-                                        </div>
-                                    </a></div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--row end-->
 
 
 

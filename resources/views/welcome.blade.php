@@ -22,53 +22,7 @@
                 </div>
             @endforeach
 
-            {{-- <div class="item">
-                <div class="item">
-                    <div class="img-fill pr">
-                        <div class="img_view_d"> <img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1674033051-63c7b79b54009.jpg"> </div>
-                        <div class="img_view_m"><img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1672752296-63b42ca8d1d93.jpg"></div>
-                        <div class="info align-left">
-                            <div>
-                                <h3>“A<br>Family<br>Man”</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item">
-                    <div class="img-fill pr">
-                        <div class="img_view_d"> <img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1674033136-63c7b7f0764b4.jpg"> </div>
-                        <div class="img_view_m"><img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1672752318-63b42cbeea8a0.jpg"></div>
-                        <div class="info align-left">
-                            <div>
-                                <h3>“Keen Student<br>of History and<br>Culture”</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item">
-                    <div class="img-fill pr">
-                        <div class="img_view_d"> <img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1674032942-63c7b72ec69ed.jpg"> </div>
-                        <div class="img_view_m"><img
-                                src="https://www.amitshah.co.in/storage/uploads/1/1672752339-63b42cd318de8.jpg"></div>
-
-
-                        <div class="info align-left">
-                            <div>
-                                <h3>“Lover of<br>Indian<br>Art & Culture”</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
+            
 
         </div>
         <div class="clearfix"></div>
@@ -318,7 +272,7 @@
 
             <div class="heading09_bx wow fadeInUp vidGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
                 <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Video gallery</h1>
-                <div class="btnVA_Right"><a href="https://amitshah.co.in/gallery?cat=All&amp;content=video">MORE</a>
+                <div class="btnVA_Right"><a href="{{route('video_gallery')}}">MORE</a>
                 </div>
             </div>
             <!--heading line end-->
@@ -375,7 +329,7 @@
                     <div class="heading09_bx wow fadeInUp imgGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
                         <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Image gallery</h1>
                         <div class="btnVA_Right"><a
-                                href="https://amitshah.co.in/gallery?cat=All&amp;content=image">MORE</a></div>
+                                href="{{route('gallery')}}">MORE</a></div>
                     </div>
 
                     <!--NEW GALLERY START-->
@@ -428,118 +382,6 @@
                                                 </div>
                                             </div>
                                         @endforeach
-                                    </div>
-
-                                    <div class="clearfix"></div>
-                                </div>
-                                <!--slider-->
-
-                            </div>
-                            <div class="tab-pane fade show " id="gal_tab_2" role="tabpanel"
-                                aria-labelledby="nav-gal_tab_2">
-
-                                <!--slider-->
-                                <div class="gallery_s">
-                                    <div class="slider slider-for">
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/EP-Vnny-02-January-2023-2023">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/E.P._Vnny_02_Jan_2023.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>E.P. Vnny : 02 January 2023</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/Satish-Acharya-10-August-2022-2022">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/Satish_Acharya_10_Aug_2022.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>Satish Acharya : 10 August 2022</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/Satish-Acharya-09-August-2022-2022">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/Satish_Acharya_09_Aug_2022_i.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>Satish Acharya : 09 August 2022</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/Alok-20-July-2022-2022">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/Alok_20_July_2022.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>Alok : 20 July 2022</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/Alok-25-June-2022-2022">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/Alok_25_June_2022.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>Alok : 25 June 2022</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="slider-banner-image">
-                                            <a href="https://amitshah.co.in/gallery/Alok-06-May-2022-2022">
-                                                <div class="ply_v_cov">
-                                                    <img
-                                                        src="https://www.amitshah.co.in/media/image/gallery/Alok_06_May_2022.jpg">
-                                                    <div class="ply_v_cov_hd">
-                                                        <h3>Alok : 06 May 2022</h3>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="slider slider-nav  ">
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/E.P._Vnny_02_Jan_2023.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/Satish_Acharya_10_Aug_2022.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/Satish_Acharya_09_Aug_2022_i.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/Alok_20_July_2022.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/Alok_25_June_2022.jpg">
-                                            </div>
-                                        </div>
-                                        <div class="thumbnail-image">
-                                            <div class="thumbImg pr"><img
-                                                    src="https://www.amitshah.co.in/media/image/gallery/Alok_06_May_2022.jpg">
-                                            </div>
-                                        </div>
                                     </div>
 
                                     <div class="clearfix"></div>
@@ -648,7 +490,7 @@
             <div class="ev_col_left">
                 <div class="heading09_bx wow fadeInUp eventsDiv" data-wow-duration="0.5s" data-wow-delay="0.2s">
                     <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Events</h1>
-                    <div class="btnVA_Right"><a href="https://amitshah.co.in/events">MORE</a></div>
+                    {{-- <div class="btnVA_Right"><a href="https://amitshah.co.in/events">MORE</a></div> --}}
                 </div>
                 @foreach ($events as $item)
                     <div class="ev_col_min">

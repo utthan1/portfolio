@@ -20,19 +20,22 @@ class AboutController extends Controller
             'political' => 'required|string',
             'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
-        $imagePath = null;
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image') ? $this->uploadFile($request->file('image'), "about") : null;
+            AboutData::find(1)->update([
+                'description' => $validatedData['description'],
+                'political' => $validatedData['political'],
+                'image' => $imagePath,
+            ]);
+            return redirect()->back()->with('success', 'Form data saved successfully!');
         }
 
         AboutData::find(1)->update([
             'description' => $validatedData['description'],
             'political' => $validatedData['political'],
-            'image' => $imagePath,
         ]);
-
         return redirect()->back()->with('success', 'Form data saved successfully!');
+        
     }
 
     private function uploadFile($file, $destination)
