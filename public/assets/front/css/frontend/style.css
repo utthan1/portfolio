@@ -230,13 +230,22 @@ body::-webkit-scrollbar-thumb {
 
 
 
-    /* Vibrant but Calm color */
-     --min_color: #262626;
+    /* Vibrant but Calm color #ff8822 */
+     /* --min_color: #262626;
     --org_color: #4ABDAC;
     --org2_color: #F7B733;
     --ligth_color: #fff;
     --orange_color: #FC4A1A;
-    /* --gry_color: #f0f1f1; */
+    --gry_color: #f8f4e2;
+    --gry2_color: #f9f9f9;
+    --dark_color: #0d0d0d;
+    --dark_color2: #121212; */
+
+    --min_color: #262626;
+    --org_color: #ff8822;
+    --org2_color: #F7B733;
+    --ligth_color: #fff;
+    --orange_color: #FC4A1A;
     --gry_color: #f8f4e2;
     --gry2_color: #f9f9f9;
     --dark_color: #0d0d0d;
@@ -1393,6 +1402,7 @@ header {
 header.fixed-header {
     transition: all .5s;
     padding: 10px 0;
+    background-color: #000 !important;
 }
 
 /*new*/
@@ -1407,8 +1417,14 @@ header.fixed-header {
     margin: 0;
     position: absolute;
     right: 0;
-    top: 4px
+    top: 4px;
 }
+@media only screen and (min-width: 1100px) {
+    .menu_btn {
+        display: none;
+    }
+}
+
 
 .hamburgermenu-active {
     overflow: hidden !important;
@@ -2300,7 +2316,7 @@ header.fixed-header .login_btn {
 
 /*___________FOOTER_____________*/
 footer {
-    background: var(--org_color);
+    background: #1a1a1a !important;
     padding: 70px 0px 0px;
     
 }
@@ -2315,7 +2331,7 @@ footer {
     border-color: #ffde01;
 }
 .footer_bottom{
-  background-color: #1b1b1b !important;
+  background-color: #000 !important;
   padding: 20px 0px;
   color: #e0e0e0;
 }
@@ -6325,12 +6341,22 @@ a.slide_fltr_btn2 {
     top: -7px;
 }
 
-.category_flt_sldier button.owl-prev::after {
+/* .category_flt_sldier button.owl-prev::after {
     content: '‹';
+} */
+
+/* .category_flt_sldier button.owl-next::after {
+    content: '›';
+} */
+
+.category_flt_sldier .owl-stage-outer {
+    width: 100% !;
 }
 
-.category_flt_sldier button.owl-next::after {
-    content: '›';
+.filter-bar .owl-stage {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
 }
 
 .category_flt_sldier .owl-nav button span {

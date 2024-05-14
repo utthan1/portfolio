@@ -6,9 +6,9 @@
 
     <div class="pageinfo_bg">
         <div class="img_view_d"><img
-                src="https://www.amitshah.co.in/storage/uploads/1/1649773482-62558baa5a894.jpg"></div>
+                src="{{asset('assets/front/storage/w-contact.jpg')}}"></div>
         <div class="img_view_m"><img
-                src="https://www.amitshah.co.in/storage/uploads/1/1649773482-62558baa5a894.jpg"></div>
+                src="{{asset('assets/front/storage/m-contact.jpg')}}"></div>
     </div>
 
 
@@ -34,7 +34,7 @@
                     </div>
                     <div class="sm_form">
 
-                        <form id="contact-us" action="https://amitshah.co.in/api/v1/contact" method="post">
+                        <form id="contact-us" action="" method="post">
                             <div class="form-group form-wt_hf"><input class="form-control" placeholder="Your name"
                                     type="text" name="name"></div>
                             <div class="form-group form-wt_hf"><input class="form-control" placeholder="Email"

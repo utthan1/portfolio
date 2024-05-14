@@ -11,12 +11,6 @@
     </div> 
 -->
 
-    <div class="pageinfo_bg">
-        <div class="img_view_d"><img
-                src="https://www.amitshah.co.in/storage/uploads/1/1652101285-627910a59049f.jpg"></div>
-        <div class="img_view_m"><img
-                src="https://www.amitshah.co.in/storage/uploads/1/1652101285-627910a59049f.jpg"></div>
-    </div>
 
 
     <div class="pageinfo_txt">
