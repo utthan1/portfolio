@@ -271,10 +271,9 @@
     <section class="sp_sm_b bg_col_g">
         <div class="container">
             <!--heading line-->
-
+            <div class="border_cover_top bg_col_o bg_col_black"></div>
             <div class="heading09_bx wow fadeInUp vidGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
                 <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Video gallery</h1>
-                <div class="btnVA_Right"><a href="{{route('video_gallery')}}">MORE</a>
                 </div>
             </div>
             <!--heading line end-->
@@ -319,7 +318,11 @@
                                 @endforeach
 
                             </div>
-
+                            <a class="d-flex justify-content-end" href="{{route('video_gallery')}}">
+                                <button class="btn bg_col_o  bg_col_black f_col_l mt-5 py-2 px-4">
+                                    More
+                                </button>
+                            </a>
                             <div class="clearfix"></div>
                         </div>
                         <!--slider-->
@@ -330,8 +333,6 @@
 
                     <div class="heading09_bx wow fadeInUp imgGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
                         <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Image gallery</h1>
-                        <div class="btnVA_Right"><a
-                                href="{{route('gallery')}}">MORE</a></div>
                     </div>
 
                     <!--NEW GALLERY START-->
@@ -385,7 +386,11 @@
                                             </div>
                                         @endforeach
                                     </div>
-
+                                    <a class="d-flex justify-content-end" href="{{route('gallery')}}">
+                                        <button class="btn bg_col_o  bg_col_black f_col_l mt-5 py-2 px-4">
+                                            More
+                                        </button>
+                                    </a>
                                     <div class="clearfix"></div>
                                 </div>
                                 <!--slider-->
@@ -422,11 +427,10 @@
 
     <section class="sp_sm_b">
         <div class="container">
-
+            <div class="border_cover_top bg_col_o bg_col_black"></div>
             <!--heading line-->
             <div class="heading09_bx wow fadeInUp newsDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
                 <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">News</h1>
-                <div class="btnVA_Right"><a href="{{route('news_page')}}">MORE</a></div>
             </div>
             <!--heading line end-->
 
@@ -467,6 +471,11 @@
                             </div>
                         @endforeach
                     </div>
+                    <a class="d-flex justify-content-end" href="{{route('news_page')}}">
+                        <button class="btn bg_col_o  bg_col_black f_col_l mt-5 py-2 px-4">
+                            More
+                        </button>
+                    </a>
                 </div>
                 <!--LEFT END-->
 
