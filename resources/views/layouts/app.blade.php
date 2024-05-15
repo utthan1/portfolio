@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Aayush</title>
+	<title>{{$appname}}</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="{{asset('assets/dashboard/img/icon.ico')}}" type="image/x-icon"/>
 
@@ -34,7 +34,7 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<!-- Logo Header -->
-			<div class="logo-header" data-background-color="blue">
+			<div class="logo-header" data-background-color="dark">
 				
 				<a href="{{ route('home') }}" class="logo" style="color: #ffffff;">
                     {{$appname}}
@@ -54,7 +54,7 @@
 			<!-- End Logo Header -->
 
 			<!-- Navbar Header -->
-			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
 				
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">

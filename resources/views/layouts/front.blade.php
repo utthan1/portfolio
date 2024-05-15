@@ -79,22 +79,22 @@
             <div class="nav-right">
                 <div class="nav-top-links pr">
                     <ul id="menu-primary-1" class="hh-navigation hh-parent main-menu">
-                        <li class="menu-item menu-item-1 ">
-                            <a href="{{ url('/') }}">Home</a>
+                        <li class="menu-item menu-item-1">
+                            <a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="menu-item menu-item-2 ">
-                            <a href="{{ route('about') }}">About</a>
+                        <li class="menu-item menu-item-2">
+                            <a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                         </li>
-                        <li class="menu-item menu-item-3 ">
-                            <a href="{{ route('gallery') }}">Gallery</a>
+                        <li class="menu-item menu-item-3">
+                            <a class="{{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">Gallery</a>
                         </li>
                     </ul>
                     <ul id="menu-primary-2" class="hh-navigation hh-parent main-menu">
                         <li class="menu-item menu-item-4 ">
-                            <a href="{{route('news_page')}}">News</a>
+                            <a class="{{ request()->routeIs('news_page') ? 'active' : '' }}" href="{{route('news_page')}}">News</a>
                         </li>
                         <li class="menu-item menu-item-6 ">
-                            <a href="{{ route('contact') }}">Contact Us</a>
+                            <a class="{{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">Contact Us</a>
                         </li>
                     </ul>
                 </div>

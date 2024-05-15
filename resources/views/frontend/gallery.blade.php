@@ -1,29 +1,18 @@
 @extends('layouts.front')
 
 @section('content')
-    <div id="gallery">
-        <section class="pageinfo">
-
-            <div class="pageinfo_bg">
-                <div class="img_view_d">
-                    <img src="{{asset('assets/front/storage/w-gallery.jpg')}}" />
-                </div>
-                <div class="img_view_m">
-                    <img src="{{asset('assets/front/storage/m-gallery.jpg')}}">
+    <section class="pageinfo   pageinfo_new ">
+    
+    
+        <div class="pageinfo_txt">
+            <div class="container pr">
+                <div class="pageinfo_txt_cov pageinfo_txt_left">
+                    <h1 class="tu heading09_topbanner">Gallery</h1>
                 </div>
             </div>
-
-
-            <div class="pageinfo_txt">
-                <div class="container pr">
-                    <div class="pageinfo_txt_cov pageinfo_txt_left">
-                        <h1 class="tu heading09_topbanner">Gallery</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </section>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
 
     <section class="filter-bar bg_col_g">
         <div class="container">
