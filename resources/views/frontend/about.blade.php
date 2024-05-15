@@ -66,10 +66,10 @@
 
     <div class="container pr">
 
-        <div class="border_cover_top bg_col_o"></div>
+        <div class="border_cover_top bg_col_o bg_col_black"></div>
 
         <div class="heading09_bx wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
-            <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Journey</h1>
+            <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Journey</h1>
         </div>
 
 
@@ -122,7 +122,7 @@
                     <div class="timeline-nav mt-5">
                         @foreach ($journey as $item)
                             <div class="timeline-nav__item history_birth" data-target="bar_history_birth">
-                                <button class="btn bg_col_o f_col_l">
+                                <button class="btn bg_col_o bg_col_black f_col_l">
                                     {{ $item->year }}
                                 </button>
                             </div>

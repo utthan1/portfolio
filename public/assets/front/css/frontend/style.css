@@ -260,6 +260,13 @@ body::-webkit-scrollbar-thumb {
 .bg_col_b2 {
     background: var(--dark_color)
 }
+.bg_col_black {
+    background: var(--min_color) !important
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.616) !important;
+}
 
 .bg_col_o {
     background: var(--org_color)
@@ -499,8 +506,8 @@ select.form-control {
 
 .btn09_s3 {
     color: #fff;
-    background: var(--org_color);
-    border: 1px solid var(--org_color);
+    background: var(--min_color);
+    border: 1px solid var(--min_color);
 }
 
 .btn09_s3:hover {
@@ -646,7 +653,7 @@ select.form-control {
     line-height: 65px;
     font-family: var(--headings3_font);
     margin: 25px auto;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .heading09_topbanner2 {
@@ -791,12 +798,13 @@ a.nw_hdg:hover {
 }
 
 .heading09_bx {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0 0 10px
 }
 
 .heading09_bx_cov {
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 0 30px 30px;
     display: inline-block;
     padding: 6px 35px;
     min-width: 200px
@@ -809,6 +817,7 @@ a.nw_hdg:hover {
     margin: 0 0 15px;
     font-weight: 700;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .heading092 {
@@ -1405,6 +1414,21 @@ header.fixed-header {
     background-color: #000 !important;
 }
 
+header.fixed-header .menu-item:hover a {
+    color: rgb(130, 130, 130) !important;
+}
+
+header .menu-item:hover a {
+    color: var(--min_color);
+}
+
+header.fixed-header .menu-item .active {
+    color: rgb(130, 130, 130) !important;
+}
+header .menu-item .active {
+    color: var(--min_color);
+}
+
 /*new*/
 .logo {
     float: left;
@@ -1469,7 +1493,8 @@ header.fixed-header {
 
 .nav-top-links ul li {
     display: inline-block;
-    vertical-align: middle
+    vertical-align: middle;
+    transition: 2s ease-in;
 }
 
 .nav-top-links ul li a {
@@ -1883,7 +1908,7 @@ a.menu_hdg:hover {
 .dat_popn_boxn {}
 
 .h_sos a {
-    background: var(--org_color);
+    background: var(--min_color);
     color: #fff;
     width: 30px;
     height: 30px;
@@ -2326,9 +2351,9 @@ footer {
 }
 
 .footer_sec1 {
-  border-style: solid;
+    border-style: solid;
     border-width: 0px 0px 5px 0px;
-    border-color: #ffde01;
+    border-color: var(--org_color);
 }
 .footer_bottom{
   background-color: #000 !important;
@@ -6323,8 +6348,8 @@ a.slide_fltr_btn2 {
     padding: 7px 25px;
     display: block;
     background: #fff;
-    border: 1px solid var(--org_color);
-    color: var(--org_color);
+    border: 1px solid var(--min_color);
+    color: var(--min_color);
     margin: 0 16px 0 0;
     cursor: pointer
 }
@@ -6332,7 +6357,7 @@ a.slide_fltr_btn2 {
 .category_flt_sldier .ctrbl_f.active,
 .category_flt_sldier .ctrbl_f:hover,
 .category_flt_sldier .ctrbl_f:focus {
-    background: var(--org_color);
+    background: var(--min_color);
     color: #fff
 }
 
@@ -9292,7 +9317,7 @@ body {
     position: absolute;
     right: -25px;
     top: 0;
-    background: var(--org_color);
+    background: var(--min_color);
     z-index: 2;
 }
 

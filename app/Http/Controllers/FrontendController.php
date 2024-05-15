@@ -19,11 +19,12 @@ class FrontendController extends Controller
         $banner = Banner::orderBy('slide_no', 'asc')->get();
         $journey = Journey::orderBy('year', 'asc')->get();
         $news = BlogPost::orderBy('date', 'desc')->get();
+        $about = AboutData::first();
         $stalwart = Stalwart::get();
         $videoGallery = Gallery::get();
         $imageGallery = ImageGallery::get();
         $events = Event::latest()->take(2)->get();
-        return view('welcome',['banner' => $banner, 'journey' => $journey, 'news' => $news , 'stalwart' => $stalwart, 'videoGallery' => $videoGallery, 'imageGallery' => $imageGallery , 'events' => $events]);
+        return view('welcome',['banner' => $banner,'about' => $about,  'journey' => $journey, 'news' => $news , 'stalwart' => $stalwart, 'videoGallery' => $videoGallery, 'imageGallery' => $imageGallery , 'events' => $events]);
     }
 
     public function about_index(){

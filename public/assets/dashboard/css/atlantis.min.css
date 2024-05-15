@@ -14522,7 +14522,7 @@ body[data-background-color=dark] .board {
 .bg-primary-gradient {
     background: #1572e8 !important;
     background: -webkit-linear-gradient(legacy-direction(-45deg), #06418e, #1572e8) !important;
-    background: linear-gradient(-45deg, #06418e, #1572e8) !important
+    background: linear-gradient(-45deg, #262626, #12325b) !important;
 }
 
 .bg-secondary-gradient {

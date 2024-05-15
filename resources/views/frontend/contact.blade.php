@@ -2,20 +2,13 @@
 
 @section('content')
 
-<section class="pageinfo">
-
-    <div class="pageinfo_bg">
-        <div class="img_view_d"><img
-                src="{{asset('assets/front/storage/w-contact.jpg')}}"></div>
-        <div class="img_view_m"><img
-                src="{{asset('assets/front/storage/m-contact.jpg')}}"></div>
-    </div>
-
-
+<section class="pageinfo   pageinfo_new ">
+    
+    
     <div class="pageinfo_txt">
         <div class="container pr">
-            <div class="pageinfo_txt_cov pageinfo_txt_center">
-                <h1 class="tu heading09_topbanner wow fadeInUp" data-wow-delay="0.8s">Contact Us</h1>
+            <div class="pageinfo_txt_cov pageinfo_txt_left">
+                <h1 class="tu heading09_topbanner text-center">Contact Us</h1>
             </div>
         </div>
     </div>
@@ -116,23 +109,6 @@
 <!-- __________ Send Us A Message END__________ -->
 
 
-<section class="sp_sm bg_col_o center donate_cont">
-    <div class="container">
-        <h1 class="heading092 f_col_l tu wow fadeInUp" data-wow-delay="0.2s"><b>DONATE</b></h1>
-        <div class="cnt-brd wow fadeInUp" data-wow-delay="0.2s"></div>
-
-
-        <div class="donate_cont_btn wow fadeInUp" data-wow-delay="0.2s">
-            <a href="https://www.pmcares.gov.in/en/web/contribution/donate_india" class="btn09_sm btn09_s1">PM
-                CARE</a>
-            <a href="https://bharatkeveer.gov.in/viewMartyrsGalleryPage" class="btn09_sm btn09_s1">BHARAT KE
-                VEER</a>
-            <a href="https://www.bjp.org/membership/en/home/donation" class="btn09_sm btn09_s1">BJP</a>
-        </div>
-
-        <div class="clearfix"></div>
-    </div>
-</section>
 
 
 @endsection

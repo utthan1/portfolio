@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-6 p-4">
-                    <img src="{{asset('assets/front/images/about.jpg')}}" class="img-fluid rounded" alt="about image" >
+                    <img src="{{asset('storage/'.$about->image)}}" class="img-fluid rounded" alt="about image" >
                 </div>
                 <div class="col-6 hv-100 p-4">
                     <div class="">
@@ -44,12 +44,14 @@
                         <hr style="width: 45px;border: 2.8px solid var(--org_color);opacity: 1; ">
                         <div class="paragraph">
                             <p>
-                                Raksha Mantri Shri Rajnath Singh is one of the senior-most political leaders of the country. He started his political career as a student activist with Akhil Bharatiya Vidyarthi Parishad (ABVP) and went on to become the Bharatiya Janata Party (BJP) National President.
+                                {{$about->description}}
                             </p>
                         </div>
-                        <button class="btn bg_col_o f_col_l mt-5 py-2 px-4">
-                            View Bio
-                        </button>
+                        <a href="{{route('about')}}">
+                            <button class="btn bg_col_o  bg_col_black f_col_l mt-5 py-2 px-4">
+                                More
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -149,10 +151,10 @@
 
         <div class="container pr">
 
-            <div class="border_cover_top bg_col_o"></div>
+            <div class="border_cover_top bg_col_o bg_col_black"></div>
 
             <div class="heading09_bx wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Journey</h1>
+                <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Journey</h1>
             </div>
 
 
@@ -205,7 +207,7 @@
                         <div class="timeline-nav mt-5">
                             @foreach ($journey as $item)
                                 <div class="timeline-nav__item history_birth" data-target="bar_history_birth">
-                                    <button class="btn bg_col_o f_col_l">
+                                    <button class="btn bg_col_o bg_col_black f_col_l">
                                         {{ $item->year }}
                                     </button>
                                 </div>
@@ -227,10 +229,10 @@
 
     <section class="sp_sm_b pr stalwartSaysCo">
         <div class="container">
-            <div class="border_cover_top bg_col_o"></div>
+            <div class="border_cover_top bg_col_o bg_col_black"></div>
 
             <div class="heading09_bx wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Stalwart Says</h1>
+                <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Stalwart Says</h1>
 
 
 
@@ -271,7 +273,7 @@
             <!--heading line-->
 
             <div class="heading09_bx wow fadeInUp vidGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Video gallery</h1>
+                <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Video gallery</h1>
                 <div class="btnVA_Right"><a href="{{route('video_gallery')}}">MORE</a>
                 </div>
             </div>
@@ -324,10 +326,10 @@
                     </div>
                     <!--VIDEOS END-->
 
-                    <div class="border_cover_top bg_col_o"></div>
+                    <div class="border_cover_top bg_col_o bg_col_black"></div>
 
                     <div class="heading09_bx wow fadeInUp imgGalleryDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                        <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Image gallery</h1>
+                        <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Image gallery</h1>
                         <div class="btnVA_Right"><a
                                 href="{{route('gallery')}}">MORE</a></div>
                     </div>
@@ -423,8 +425,8 @@
 
             <!--heading line-->
             <div class="heading09_bx wow fadeInUp newsDiv" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Press</h1>
-                <div class="btnVA_Right"><a href="https://amitshah.co.in/press">MORE</a></div>
+                <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">News</h1>
+                <div class="btnVA_Right"><a href="{{route('news_page')}}">MORE</a></div>
             </div>
             <!--heading line end-->
 
@@ -489,7 +491,7 @@
 
             <div class="ev_col_left">
                 <div class="heading09_bx wow fadeInUp eventsDiv" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                    <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Events</h1>
+                    <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Events</h1>
                     {{-- <div class="btnVA_Right"><a href="https://amitshah.co.in/events">MORE</a></div> --}}
                 </div>
                 @foreach ($events as $item)
