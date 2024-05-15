@@ -529,13 +529,13 @@
 
 
                 <div class="heading09_bx wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                    <h1 class="heading09 tu heading09_bx_cov bg_col_o f_col_l">Watch live</h1>
+                    <h1 class="heading09 tu heading09_bx_cov bg_col_o bg_col_black f_col_l">Watch live</h1>
                 </div>
 
                 <div class="ev_col_bg">
 
-                    <a href="" data-fancybox="watch_live"><img
-                            src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1690714439-64c6414777bd2.jpg">
+                    <a href="" data-fancybox="watch_live">
+                        <img src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1690714439-64c6414777bd2.jpg">
                         <div class="ev_col_txt2">
 
                             <p class="ev_col_txt2_tx">Live Soon</p>
