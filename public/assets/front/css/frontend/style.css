@@ -8473,13 +8473,12 @@ body {
 }
 
 .abt_1_img {
-    width: 450px;
-    height: 450px;
     overflow: hidden;
-    border-radius: 100%;
     margin: auto;
 }
-
+.abt_1_img img {
+    border-radius: 20px;
+}
 .abt_1_txt .title_txt {
     color: #000;
 }
