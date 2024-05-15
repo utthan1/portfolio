@@ -80,7 +80,7 @@
                 <div class="nav-top-links pr">
                     <ul id="menu-primary-1" class="hh-navigation hh-parent main-menu">
                         <li class="menu-item menu-item-1">
-                            <a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
+                            <a class="{{ request()->routeIs('welcome') ? 'active' : '' }}" href="{{ route('welcome') }}">Home</a>
                         </li>
                         <li class="menu-item menu-item-2">
                             <a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
