@@ -29,10 +29,12 @@ Route::get('/video-gallery', [App\Http\Controllers\FrontendController::class, 'v
 Route::get('/video-gallery-details/{id}/{title}', [App\Http\Controllers\FrontendController::class, 'video_gallery_detail'])->name('video_gallery_detail');
 
 
-
+Route::post('/contact-message',[App\Http\Controllers\FrontendController::class , 'store_contact_message'])->name('contact_post');
 Route::get('/contact-us', function () {
     return view('frontend.contact');
 })->name('contact');
+
+
 
 Auth::routes();
 
@@ -43,6 +45,8 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/about-setting' , [App\Http\Controllers\AboutController::class , 'store'])->name('about-setting');
     Route::get('admin/app-setting' , [App\Http\Controllers\AppSettingController::class , 'index'])->name('app-setting');
     Route::post('admin/app-setting' , [App\Http\Controllers\AppSettingController::class , 'store'])->name('app-setting');
+
+    Route::get('admin/contact-message' , [App\Http\Controllers\MainController::class , 'contact_message_index'])->name('contact_message');
 
     Route::get('admin/journey-setting' , [App\Http\Controllers\MainController::class , 'journey_index'])->name('journey-setting');
     Route::post('admin/journey-setting' , [App\Http\Controllers\MainController::class , 'journey_create'])->name('journey-setting');

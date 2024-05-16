@@ -14,9 +14,8 @@
     <title>{{ $layout->app_name }} </title>
     <meta name="description" content="{{ $layout->meta_description }}">
 
-
-    {{-- <link rel="shortcut icon" href="https://www.amitshah.co.in/storage/uploads/1/1657030828-62c448ac0b44e.png"
-        type="image/x-icon"> --}}
+    <link rel="shortcut icon" href="{{asset('assets/logo/favicon.jpg')}}"
+        type="image/x-icon">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
 
@@ -200,11 +199,9 @@
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
                         <div class="">
-                                <h3 class="text-center">Rajnath Singh</h3>
+                                <h3 class="text-center">Swatantra Dev Singh</h3>
                             <div class="card-body">
-                                <p>Raksha Mantri Shri Rajnath Singh is one of the senior-most political leaders of the country. He
-                                    started his political career as a student activist with Akhil Bharatiya Vidyarthi Parishad
-                                    (ABVP) and went on to become the Bharatiya Janata Party (BJP) National President.</p>
+                                <p class="text-center">Swatantra Dev Singh, a dedicated leader in Indian politics, currently serves as a Cabinet Minister in the Ministry of Jal Shakti, Uttar Pradesh. Committed to uplifting communities, he champions initiatives for the betterment of the Bundelkhand region. As the first in his family to enter politics, he brings a fresh perspective and unwavering dedication to serving the people.</p>
                                 <div class="d-flex flex-wrap mt-5">
                                     <p><i class="far fa-envelope"></i><a class="p-2" href="mailto:contact@rajnathsingh.in">contact@rajnathsingh.in</a></p>
                                     <p><i class="fas fa-map-marker-alt"></i> New Delhi</p>

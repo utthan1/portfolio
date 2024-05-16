@@ -39,6 +39,7 @@ return array(
     'App\\Models\\GalleryImage' => $baseDir . '/app/Models/GalleryImage.php',
     'App\\Models\\ImageGallery' => $baseDir . '/app/Models/ImageGallery.php',
     'App\\Models\\Journey' => $baseDir . '/app/Models/Journey.php',
+    'App\\Models\\Stalwart' => $baseDir . '/app/Models/Stalwart.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
