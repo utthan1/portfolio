@@ -462,6 +462,7 @@ $(function() {
         rewind: true,
         loop: true,
         asNavFor: '.timeline-slider',
+        autoplaySpeed: 1600,
         centerMode: false,
         focusOnSelect: true,
         mobileFirst: true,
@@ -494,6 +495,8 @@ $(function() {
         cssEase: 'ease',
         edgeFriction: 0.5,
         mobileFirst: true,
+        autoplay:true,
+        autoplaySpeed: 5000,
         speed: 500,
         responsive: [{
                 breakpoint: 0,

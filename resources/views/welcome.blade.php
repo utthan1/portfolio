@@ -21,9 +21,6 @@
                     </div>
                 </div>
             @endforeach
-
-            
-
         </div>
         <div class="clearfix"></div>
     </section>

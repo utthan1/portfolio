@@ -26,8 +26,13 @@
                         <h1 class="title_hd">Write to Us</h1>
                     </div>
                     <div class="sm_form">
-
-                        <form id="contact-us" action="" method="post">
+                        @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        <form  action="{{route('contact_post')}}" method="post">
+                            @csrf
                             <div class="form-group form-wt_hf"><input class="form-control" placeholder="Your name"
                                     type="text" name="name"></div>
                             <div class="form-group form-wt_hf"><input class="form-control" placeholder="Email"
@@ -52,7 +57,7 @@
 
 
                             <div class="form-group form-wt_full form-group-btn"><button class="btn09_sm btn09_s3"
-                                    type="submit" id="contact_submit_form">Submit</button></div>
+                                    type="submit">Submit</button></div>
                         </form>
 
                     </div>

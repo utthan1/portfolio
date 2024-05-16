@@ -11,6 +11,7 @@ use App\Models\Stalwart;
 use App\Models\Gallery;
 use App\Models\ImageGallery;
 use App\Models\Event;
+use App\Models\ContactMessage;
 
 
 class FrontendController extends Controller
@@ -18,11 +19,11 @@ class FrontendController extends Controller
     public function index(){
         $banner = Banner::orderBy('slide_no', 'asc')->get();
         $journey = Journey::orderBy('year', 'asc')->get();
-        $news = BlogPost::orderBy('date', 'desc')->get();
+        $news = BlogPost::orderBy('date', 'desc')->latest()->take(2)->get();
         $about = AboutData::first();
         $stalwart = Stalwart::get();
-        $videoGallery = Gallery::get();
-        $imageGallery = ImageGallery::get();
+        $videoGallery = Gallery::latest()->take(2)->get();
+        $imageGallery = ImageGallery::latest()->take(2)->get();
         $events = Event::latest()->take(2)->get();
         return view('welcome',['banner' => $banner,'about' => $about,  'journey' => $journey, 'news' => $news , 'stalwart' => $stalwart, 'videoGallery' => $videoGallery, 'imageGallery' => $imageGallery , 'events' => $events]);
     }
@@ -69,5 +70,25 @@ class FrontendController extends Controller
     public function video_gallery_detail($id , $title) {
         $video_gallery = Gallery::find($id);
         return view('frontend.video_gallerydetails', ['video_gallery' => $video_gallery]);
+    }
+
+    public function store_contact_message(Request $request){
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'mobile' => 'required|string|max:20',
+            'enquiry_type' => 'required|string|max:255',
+            'message' => 'required|string',
+        ]);
+        $contactMessage = new ContactMessage;
+        $contactMessage->name = $validatedData['name'];
+        $contactMessage->email = $validatedData['email'];
+        $contactMessage->mobile = $validatedData['mobile'];
+        $contactMessage->enquiry_type = $validatedData['enquiry_type'];
+        $contactMessage->message = $validatedData['message'];
+
+        $contactMessage->save();
+        $request->session()->flash('success', 'Your message has been submitted successfully.');
+        return redirect()->back();
     }
 }

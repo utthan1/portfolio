@@ -12,6 +12,7 @@ use App\Models\EventImage;
 use App\Models\GalleryImage;
 use App\Models\ImageGallery;
 use App\Models\Stalwart;
+use App\Models\ContactMessage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
@@ -75,6 +76,11 @@ class MainController extends Controller
         }
         $banner->delete();
         return redirect()->back()->with('success', 'Banner deleted successfully');
+    }
+
+    public function contact_message_index() {
+        $contactData = ContactMessage::get();
+        return View('admin.contact-message',['contactData' => $contactData]);
     }
 
     public function journey_index() {
