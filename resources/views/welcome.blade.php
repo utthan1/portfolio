@@ -531,8 +531,8 @@
 
                 <div class="ev_col_bg">
 
-                    <a href="" data-fancybox="watch_live">
-                        <img src="https://asproduction.s3.ap-south-1.amazonaws.com/uploads/1/1690714439-64c6414777bd2.jpg">
+                    <a href="{{$live->url}}" target="_blank">
+                        <img src="{{asset('storage/'.$live->image)}}">
                         <div class="ev_col_txt2">
 
                             <p class="ev_col_txt2_tx">Live Soon</p>

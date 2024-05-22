@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\App;
+use App\Models\LiveSetting;
 
 class AppSettingController extends Controller
 {
@@ -31,6 +32,47 @@ class AppSettingController extends Controller
             'logo' => $imagePath,
             'meta_tags' => $validatedData['meta-tags'],
             'meta_description' => $validatedData['meta-description'],
+        ]);
+
+        return redirect()->back()->with('success', 'App details saved successfully!');
+    }
+
+    public function live_index() {
+        $app = LiveSetting::find(1);
+        return view('admin.live-setting', compact('app'));
+    }
+
+    public function live_store(Request $request)
+    {
+        
+        $request->validate([
+            'url' => 'required|string',
+            'image' => [
+                'nullable',
+                'image',
+                'mimes:jpeg,png,jpg,gif,svg',
+                'max:2048',
+                function ($attribute, $value, $fail) {
+                    if ($value) {
+                        list($width, $height) = getimagesize($value->getPathname());
+                        $aspectRatio = $width / $height;
+                        $expectedAspectRatio = 547 / 312;
+
+                        if (abs($aspectRatio - $expectedAspectRatio) > 0.01) {
+                            $fail('The ' . $attribute . ' must have an aspect ratio of 547:312.');
+                        }
+                    }
+                },
+            ],
+        ]);
+        $imagePath = null;
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image') ? $this->uploadFile($request->file('image'), "live") : null;
+        }
+
+        LiveSetting::find(1)->update([
+            'url' => $request->url,
+            'image' => $imagePath,
         ]);
 
         return redirect()->back()->with('success', 'App details saved successfully!');

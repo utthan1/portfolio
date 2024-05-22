@@ -46,6 +46,9 @@ Route::middleware('auth')->group(function () {
     Route::get('admin/app-setting' , [App\Http\Controllers\AppSettingController::class , 'index'])->name('app-setting');
     Route::post('admin/app-setting' , [App\Http\Controllers\AppSettingController::class , 'store'])->name('app-setting');
 
+    Route::get('admin/live-setting' , [App\Http\Controllers\AppSettingController::class , 'live_index'])->name('live-setting');
+    Route::post('admin/live-setting' , [App\Http\Controllers\AppSettingController::class , 'live_store'])->name('live-setting');
+
     Route::get('admin/contact-message' , [App\Http\Controllers\MainController::class , 'contact_message_index'])->name('contact_message');
 
     Route::get('admin/journey-setting' , [App\Http\Controllers\MainController::class , 'journey_index'])->name('journey-setting');
