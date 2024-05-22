@@ -12,6 +12,7 @@ use App\Models\Gallery;
 use App\Models\ImageGallery;
 use App\Models\Event;
 use App\Models\ContactMessage;
+use App\Models\LiveSetting;
 
 
 class FrontendController extends Controller
@@ -25,7 +26,8 @@ class FrontendController extends Controller
         $videoGallery = Gallery::latest()->take(2)->get();
         $imageGallery = ImageGallery::latest()->take(2)->get();
         $events = Event::latest()->take(2)->get();
-        return view('welcome',['banner' => $banner,'about' => $about,  'journey' => $journey, 'news' => $news , 'stalwart' => $stalwart, 'videoGallery' => $videoGallery, 'imageGallery' => $imageGallery , 'events' => $events]);
+        $live = LiveSetting::find(1);
+        return view('welcome',['banner' => $banner,'about' => $about,  'journey' => $journey, 'news' => $news , 'stalwart' => $stalwart, 'videoGallery' => $videoGallery, 'imageGallery' => $imageGallery , 'events' => $events, 'live' => $live]);
     }
 
     public function about_index(){

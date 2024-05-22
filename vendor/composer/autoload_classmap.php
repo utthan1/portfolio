@@ -33,6 +33,7 @@ return array(
     'App\\Models\\App' => $baseDir . '/app/Models/App.php',
     'App\\Models\\Banner' => $baseDir . '/app/Models/Banner.php',
     'App\\Models\\BlogPost' => $baseDir . '/app/Models/BlogPost.php',
+    'App\\Models\\ContactMessage' => $baseDir . '/app/Models/ContactMessage.php',
     'App\\Models\\Event' => $baseDir . '/app/Models/Event.php',
     'App\\Models\\EventImage' => $baseDir . '/app/Models/EventImage.php',
     'App\\Models\\Gallery' => $baseDir . '/app/Models/Gallery.php',

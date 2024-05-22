@@ -566,6 +566,7 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         'App\\Models\\App' => __DIR__ . '/../..' . '/app/Models/App.php',
         'App\\Models\\Banner' => __DIR__ . '/../..' . '/app/Models/Banner.php',
         'App\\Models\\BlogPost' => __DIR__ . '/../..' . '/app/Models/BlogPost.php',
+        'App\\Models\\ContactMessage' => __DIR__ . '/../..' . '/app/Models/ContactMessage.php',
         'App\\Models\\Event' => __DIR__ . '/../..' . '/app/Models/Event.php',
         'App\\Models\\EventImage' => __DIR__ . '/../..' . '/app/Models/EventImage.php',
         'App\\Models\\Gallery' => __DIR__ . '/../..' . '/app/Models/Gallery.php',

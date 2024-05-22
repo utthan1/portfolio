@@ -189,6 +189,12 @@
 								<p>Stalwart Setting</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a  href="{{route('live-setting')}}">
+								<i class="fas fa-home"></i>
+								<p>Live Setting</p>
+							</a>
+						</li>
                         <li class="nav-item">
 							<a  href="{{route('app-setting')}}">
 								<i class="fas fa-home"></i>
