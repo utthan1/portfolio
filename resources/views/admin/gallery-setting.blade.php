@@ -95,7 +95,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="statusModalLabel">Add Blogs</h5>
+                    <h5 class="modal-title" id="statusModalLabel">Add Gallery</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -117,7 +117,7 @@
                         </div>
                         <div class="form-group">
                             <label>Image </label>
-                            <br/><span class="">size of 1920x1080 pixels and an aspect ratio of 141:104 </span>
+                            <br/><span class="">The image must have an aspect ratio of 1122:575.</span>
                             <input type="file" class="form-control" name="image">
                         </div>
                     </div>
@@ -158,6 +158,7 @@
                         </div>
                         <div class="form-group">
                             <label>Image</label>
+                            <br/><span class="">The image must have an aspect ratio of 1122:575.</span>
                             <input type="file" class="form-control" name="image">
                         </div>
                     </div>

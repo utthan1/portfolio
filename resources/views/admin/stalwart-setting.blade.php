@@ -114,7 +114,7 @@
                         </div>
                         <div class="form-group ">
                             <label>Image</label>
-                            <br/><span class="">size of 1920x1080 pixels and an aspect ratio of 141:104 </span>
+                            <br/><span class="">The image must have an aspect ratio of 1:1. </span>
                             <input type="file" class="form-control" name="image" />
                         </div>
                     </div>
@@ -154,6 +154,7 @@
     
                         <div class="form-group">
                             <label>Image</label>
+                            <br/><span class="">The image must have an aspect ratio of 1:1. </span>
                             <input type="file" class="form-control" name="image">
                         </div>
                     </div>
