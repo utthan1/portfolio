@@ -4472,6 +4472,9 @@ li.icon_link5 a.active span{ background: url(../images/icon/polls_icon_h.png) no
     font-size: 0;
     border: none
 }
+.gallery_s .slider-nav   {
+    display: none;
+}
 
 .gallery_s .slick-prev {
     transform: rotate(-90deg);

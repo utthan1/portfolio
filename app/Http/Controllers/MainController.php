@@ -16,6 +16,8 @@ use App\Models\ContactMessage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
+use App\Rules\AspectRatio;
+
 use Illuminate\Support\Facades\Validator;
 
 class MainController extends Controller
@@ -30,7 +32,23 @@ class MainController extends Controller
         
         $validatedData = $request->validate([
             'slide_no' => 'required|integer',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => [
+                'required',
+                'image',
+                'mimes:jpeg,png,jpg,gif,svg',
+                'max:2048',
+                function ($attribute, $value, $fail) {
+                    if ($value) {
+                        list($width, $height) = getimagesize($value->getPathname());
+                        $aspectRatio = $width / $height;
+                        $expectedAspectRatio = 1269 / 592;
+
+                        if (abs($aspectRatio - $expectedAspectRatio) > 0.01) {
+                            $fail('The ' . $attribute . ' must have an aspect ratio of 1269∶592.');
+                        }
+                    }
+                },
+            ],
         ]);
    
         if ($request->hasFile('image')) {
@@ -168,10 +186,8 @@ class MainController extends Controller
                 'image',
                 'mimes:jpeg,png,jpg,gif',
                 'max:2048', // Max size in kilobytes (2MB)
-                Rule::dimensions()->ratio(1)->width(153)->height(153),
+                new AspectRatio(1, 1),
             ],
-        ], [
-            'image.dimensions' => 'The :attribute must have a rendered size of 111x111 pixels and an aspect ratio of 1:1.',
         ]);
         
 
@@ -196,10 +212,10 @@ class MainController extends Controller
                 'image',
                 'mimes:jpeg,png,jpg,gif',
                 'max:2048', // Max size in kilobytes (2MB)
-                Rule::dimensions()->ratio(1)->width(153)->height(153),
+                new AspectRatio(1, 1),
             ],
         ], [
-            'image.dimensions' => 'The :attribute must have a rendered size of 111x111 pixels and an aspect ratio of 1:1.',
+            'image.dimensions' => 'The :attribute must have an aspect ratio of 1:1.',
         ]);
 
         $stalwart = Stalwart::findOrFail($validatedData['id']);
@@ -315,10 +331,8 @@ class MainController extends Controller
                 'image',
                 'mimes:jpeg,png,jpg,gif',
                 'max:2048', // Max size in kilobytes (2MB)
-                Rule::dimensions()->width(1920)->height(1080),
+                new AspectRatio(1122, 575),
             ],
-        ], [
-            'image.dimensions' => 'The :attribute must have a rendered size of 1920x1080 pixels and an aspect ratio of 141:104.',
         ]);
 
         if ($request->hasFile('image')) {
@@ -343,10 +357,8 @@ class MainController extends Controller
                 'image',
                 'mimes:jpeg,png,jpg,gif',
                 'max:2048', // Max size in kilobytes (2MB)
-                Rule::dimensions()->width(1920)->height(1080),
+                new AspectRatio(1122, 575),
             ],
-        ], [
-            'image.dimensions' => 'The :attribute must have a rendered size of 1920x1080 pixels and an aspect ratio of 141:104.',
         ]);
         $gallery = Gallery::findOrFail($validatedData['id']);
         $gallery->date = $validatedData['date'];

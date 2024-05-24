@@ -27,10 +27,10 @@
     <section class="hero_about">
         <div class="container">
             <div class="row py-5">
-                <div class="col-6 p-4">
+                <div class="col-md-6 col-8 p-4">
                     <img src="{{asset('storage/'.$about->image)}}" class="img-fluid rounded" alt="about image" >
                 </div>
-                <div class="col-6 hv-100 p-4">
+                <div class="col-md-6  hv-100 p-4">
                     <div class="">
                         <div class="header_title mb-2">
                             <h3 class="timalhdg">ABOUT</h3>

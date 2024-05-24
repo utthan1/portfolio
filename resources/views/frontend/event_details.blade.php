@@ -19,7 +19,7 @@
 
 
             <!--LEFT-->
-            <div class="content_box_left_change content_box_sm ">
+            <div class="content_box_left content_box_sm  ">
 
                 <div class="block_dtl_min">
                     <h1 class="blog-h">{{$event->title}}</h1>
@@ -50,7 +50,6 @@
 
                         </div>
                     </section>
-
 
                    
 
