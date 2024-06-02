@@ -1484,7 +1484,8 @@ header .menu-item .active {
     margin: 0 40px 0 0;
     align-content: center;
     align-items: center;
-    z-index: 1
+    z-index: 1;
+    height: 50px;
 }
 
 .nav-top-links ul {
@@ -1502,6 +1503,7 @@ header .menu-item .active {
     color: #fff;
     letter-spacing: 2px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .nav-top-links {

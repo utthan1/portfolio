@@ -69,7 +69,7 @@
 
             <div class="logo">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset("storage/$layout->logo") }}" class="logo_call_lit" />
+                    <img src="{{ asset("storage/$layout->logo") }}" class="logo_call_lit" style="width: 220px;"/>
                     <img src="{{ asset("storage/$layout->logo") }}" class="logo_call_min" />
                 </a>
             </div>
