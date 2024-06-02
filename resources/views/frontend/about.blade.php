@@ -7,7 +7,7 @@
 
             <div class="col-md-6 ma wow fadeInUp">
                 <div class="abt_1_txt">
-                    <h2 class="title_hd f_col_o">Swayamsevak Sangh : An Introduction</h2>
+                    <h2 class="title_hd f_col_o">Swatantra Dev Singh : An Introduction</h2>
                     <p class="title_txt f_col_o"></p>
                     <div style="text-align: justify;">
                         <p>{{$about->description}}</p>

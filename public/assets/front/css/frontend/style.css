@@ -2348,6 +2348,11 @@ footer {
     
 }
 
+.footer_sec1 .footer-name-heading {
+    font-family: "Roboto", Sans-serif !important;
+    font-weight: 600 !important;
+}
+
 .footer_end {
  
 }

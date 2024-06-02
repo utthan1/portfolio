@@ -199,7 +199,7 @@
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
                         <div class="">
-                                <h3 class="text-center">Swatantra Dev Singh</h3>
+                                <h3 class="text-center footer-name-heading">Swatantra Dev Singh</h3>
                             <div class="card-body">
                                 <p class="text-center">Swatantra Dev Singh, a dedicated leader in Indian politics, currently serves as a Cabinet Minister in the Ministry of Jal Shakti, Uttar Pradesh. Committed to uplifting communities, he champions initiatives for the betterment of the Bundelkhand region. As the first in his family to enter politics, he brings a fresh perspective and unwavering dedication to serving the people.</p>
                                 <div class="d-flex flex-wrap mt-5">
