@@ -204,7 +204,7 @@
                                 <p class="text-center">Swatantra Dev Singh, a dedicated leader in Indian politics, currently serves as a Cabinet Minister in the Ministry of Jal Shakti, Uttar Pradesh. Committed to uplifting communities, he champions initiatives for the betterment of the Bundelkhand region. As the first in his family to enter politics, he brings a fresh perspective and unwavering dedication to serving the people.</p>
                                 <div class="d-flex flex-wrap mt-5">
                                     <p><i class="far fa-envelope"></i><a class="p-2" href="mailto:contact@Swatantradevsingh.in">contact@Swatantradevsingh.in</a></p>
-                                    <p><i class="fas fa-map-marker-alt"></i> contact@Swatantradevsingh.in</p>
+                                    <p><i class="fas fa-map-marker-alt"></i>Lucknow</p>
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <div class="h_sos h_sos_cont ">
