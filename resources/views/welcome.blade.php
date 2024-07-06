@@ -63,16 +63,16 @@
                 <div class="item">
                     <div class="amit_s_inf_min">
                         <div class="blog-bg pr">
-                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=zB9P4wLdrG0"><img
-                                    src="https://img.youtube.com/vi/zB9P4wLdrG0/sddefault.jpg">
+                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=BF34SzFUJQo"><img
+                                    src="https://img.youtube.com/vi/BF34SzFUJQo/sddefault.jpg">
                                 <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg">
                                 </div>
                             </a>
                         </div>
 
                         <div class="amit_s_inf_c2">
-                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">“Home
-                                Minister Shri Amit Shah Speaking on the Ideology of the BJP”</h2>
+                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">Swatantra Dev Singh Interview में टिकट बंटवारे, Yogi, Keshav, UP Election पर क्या बोले?
+                            </h2>
 
                         </div>
                     </div>
@@ -80,16 +80,16 @@
                 <div class="item">
                     <div class="amit_s_inf_min">
                         <div class="blog-bg pr">
-                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=P9DKpnDHPZg"><img
-                                    src="https://img.youtube.com/vi/P9DKpnDHPZg/sddefault.jpg">
+                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=4bMfhgMfGIQ&t=3s"><img
+                                    src="https://img.youtube.com/vi/4bMfhgMfGIQ/sddefault.jpg">
                                 <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg">
                                 </div>
                             </a>
                         </div>
 
                         <div class="amit_s_inf_c2">
-                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">“Home
-                                Minister Shri Amit Shah Speaking on the Life and Works Adi Shankaracharya”</h2>
+                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">India Tv Samvaad 2024 LIVE: 2024 चुनाव से पहले Swatantra Dev Singh का Exclusive Interview
+                            </h2>
 
                         </div>
                     </div>
@@ -97,16 +97,15 @@
                 <div class="item">
                     <div class="amit_s_inf_min">
                         <div class="blog-bg pr">
-                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=xp7wBgKCIB4"><img
-                                    src="https://img.youtube.com/vi/xp7wBgKCIB4/sddefault.jpg">
+                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=Hcx5TCN3L08"><img
+                                    src="https://img.youtube.com/vi/Hcx5TCN3L08/sddefault.jpg">
                                 <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg">
                                 </div>
                             </a>
                         </div>
 
                         <div class="amit_s_inf_c2">
-                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">“Home
-                                Minister Shri Amit Shah Speaking on Jammu &amp; Kashmir Issue”</h2>
+                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">ETV भारत पर चुनावी चर्चा... ETV Bharat Hindi | Shri Swatantra Dev Singh Ji</h2>
 
                         </div>
                     </div>
@@ -114,16 +113,15 @@
                 <div class="item">
                     <div class="amit_s_inf_min">
                         <div class="blog-bg pr">
-                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=nbSNSXz3i90"><img
-                                    src="https://img.youtube.com/vi/nbSNSXz3i90/sddefault.jpg">
+                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=eesPV-M1rCM"><img
+                                    src="https://img.youtube.com/vi/eesPV-M1rCM/sddefault.jpg">
                                 <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg">
                                 </div>
                             </a>
                         </div>
 
                         <div class="amit_s_inf_c2">
-                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">“Home
-                                Minister Shri Amit Shah Speaking on Prime Minister Narendra Modi”</h2>
+                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">विधान सभा में प्रश्नों के उत्तर देते हुए माननीय जल शक्ति मंत्री श्री स्वतंत्र देव सिंह जी...</h2>
 
                         </div>
                     </div>
