@@ -69,8 +69,7 @@
                     <ul class="contact_col_info">
 
                         <li>
-                            <div class="cont_i"><i class="fas fa-map-marker-alt"></i></div> Ministry of Home
-                            Affairs, North Block, New Delhi - 110001 India
+                            <div class="cont_i"><i class="fas fa-map-marker-alt"></i></div> 2/164, Vishwas Khand, Lucknow - 226010 (Gomti Nagar)2/164, Vishwas Khand, Lucknow - 226010 (Gomti Nagar)
                         </li>
 
                         <li>
@@ -78,30 +77,30 @@
                         </li>
 
                         <li>
-                            <div class="cont_i"><i class="far fa-envelope"></i></div> <a href="mailto:hm@mha.gov.in"
-                                target="_blank">hm@mha.gov.in</a>
+                            <div class="cont_i"><i class="far fa-envelope"></i></div> <a href="mailto:contact@Swatantradevsingh.in"
+                                target="_blank">contact@Swatantradevsingh.in</a>
                         </li>
 
 
                     </ul>
 
                     <div class="h_sos h_sos_cont">
-                        <a href="https://www.facebook.com/amitshahofficial" target="_blank"><i
+                        <a href="https://www.facebook.com/SwatantraDevSingh/"" target="_blank"><i
                                 class="fab fa-facebook-f"></i></a>
 
-                        <a href="https://twitter.com/AmitShah" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://x.com/swatantrabjp?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
 
-                        <a href="https://www.instagram.com/amitshahofficial" target="_blank"><i
+                        <a href="https://www.instagram.com/swatantrabjp" target="_blank"><i
                                 class="fab fa-instagram"></i></a>
 
-                        <a href="https://www.youtube.com/@AmitShah" target="_blank"><i
+                        <a href="https://www.youtube.com/@SwatantraDevSinghBJP" target="_blank"><i
                                 class="fab fa-youtube"></i></a>
 
                         <!--    <a href="callto:https://whatsapp.com/channel/0029Va5Z8AkJJhzejWyIwA12" target="_blank"><i class="fas fa-phone"></i></a>
 -->
 
-                        <a href="https://whatsapp.com/channel/0029Va5Z8AkJJhzejWyIwA12" target="_blank"><i
-                                class="fab fa-whatsapp"></i></a>
+                        {{-- <a href="https://whatsapp.com/channel/0029Va5Z8AkJJhzejWyIwA12" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a> --}}
                     </div>
 
 
