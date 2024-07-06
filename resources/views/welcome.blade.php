@@ -63,15 +63,15 @@
                 <div class="item">
                     <div class="amit_s_inf_min">
                         <div class="blog-bg pr">
-                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=BF34SzFUJQo"><img
-                                    src="https://img.youtube.com/vi/BF34SzFUJQo/sddefault.jpg">
+                            <a data-fancybox="video_slider" href="https://www.youtube.com/watch?v=wBV7Zoz44ag"><img
+                                    src="https://img.youtube.com/vi/wBV7Zoz44ag/sddefault.jpg">
                                 <div class="bg_ovrl_btn"><img src="https://amitshah.co.in/images/icon/video.svg">
                                 </div>
                             </a>
                         </div>
 
                         <div class="amit_s_inf_c2">
-                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">Swatantra Dev Singh Interview में टिकट बंटवारे, Yogi, Keshav, UP Election पर क्या बोले?
+                            <h2 class="heading09 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">किसानों की आय दोगुनी किये जाने हेतु मील का पत्थर साबित हुआ...सिंचाई विभाग
                             </h2>
 
                         </div>
