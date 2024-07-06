@@ -241,34 +241,6 @@
 
 
 
-    <div id="sharepopup" class="fancypopup_r">
-
-        <div class="shareoption_wrapper">
-            <div class="srpost_row" data-id="" data-type="" data-url="" data-category="">
-                <p>Share this post:</p>
-
-                <div class="srpost_t">
-                    <a href="https://wa.me/?text=https://amitshah.co.in" class="whatsapp_s" data-text="whatsapp"><i
-                            class="fab fa-whatsapp"></i></a>
-
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://amitshah.co.in" class="facebook_s"
-                        data-text="facebook"><i class="fab fa-facebook-f"></i></a>
-
-                    <a href="https://twitter.com/intent/tweet?text=https://amitshah.co.in" class="twitter_s"
-                        data-text="twitter"><i class="fab fa-twitter"></i></a>
-
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://amitshah.co.in"
-                        class="linkedin_s" data-text="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <div class="srpost_copy">
-                    <p>or Copy link:</p>
-                    <div class="srpost_copy_fld"><input type="text" value="" readonly id="myInput"
-                            class="srpost_copy_fld_i"><button class="srpost_copy_fld_b">Copy URL</button></div>
-                </div>
-            </div>
-        </div>
-    </div><!-- __________ FOOTER END__________ -->
-
 
     <script type="text/javascript" src="https://amitshah.co.in/js/frontend/lib.js"></script>
     <!--global js end-->
