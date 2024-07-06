@@ -208,15 +208,15 @@
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <div class="h_sos h_sos_cont ">
-                                        <a href="https://www.facebook.com/amitshahofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.facebook.com/SwatantraDevSingh/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                                     
-                                        <a href="https://twitter.com/AmitShah" target="_blank"><i class="fab fa-twitter"></i></a> 
+                                        <a href="https://x.com/swatantrabjp?lang=en" target="_blank"><i class="fab fa-twitter"></i></a> 
                                     
-                                        <a href="https://www.instagram.com/amitshahofficial" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/swatantrabjp" target="_blank"><i class="fab fa-instagram"></i></a>
                                     
-                                        <a href="https://www.youtube.com/@AmitShah" target="_blank"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.youtube.com/@SwatantraDevSinghBJP" target="_blank"><i class="fab fa-youtube"></i></a>
                                     
-                                        <a href="https://whatsapp.com/channel/0029Va5Z8AkJJhzejWyIwA12" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                        {{-- <a href="https://whatsapp.com/channel/0029Va5Z8AkJJhzejWyIwA12" target="_blank"><i class="fab fa-whatsapp"></i></a> --}}
                                     </div>
                                 </div>
                             </div>

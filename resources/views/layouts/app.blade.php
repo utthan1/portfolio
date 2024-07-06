@@ -1,8 +1,3 @@
-@php
-    $appname = App\Models\App::find(1)->app_name;
-@endphp
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +32,7 @@
 			<div class="logo-header" data-background-color="dark">
 				
 				<a href="{{ route('home') }}" class="logo" style="color: #ffffff;">
-                    {{$appname}}
+                    Scheme
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">
